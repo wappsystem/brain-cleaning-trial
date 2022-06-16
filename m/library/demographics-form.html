@@ -1,0 +1,110 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3 id="title__ID"></h3>
+                            <!-- participant part for all tsak forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="form-group">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" id=Participant_uid__ID class=form-control readonly />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- form group -->
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label><span class="">Age</span>
+                                            <input type=number class="form-control" name="age" min="49" max="75" id=age__ID placeholder="" readonly>
+                                        </label><br>
+                                        <label><span class="">Months</span>
+                                            <input type=number class="form-control" id=month__ID placeholder="" readonly>
+                                        </label>                                        
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <label><span>MMSE score available?</span></label>
+                                    <fieldset class="">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmse_available" value="1">
+                                            <span class="checkmark"></span>Yes</label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmse_available" value="0">
+                                            <span class="checkmark"></span>No&nbsp;</label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div style='display:none' id=mmse_score__ID>
+                                <div class="form-group" >
+                                    <div class="questiongroup ">
+                                        <fieldset class="">
+                                            <label><span class="">MMSE Score:</span>
+                                                <input type=number class="form-control" min=0 max=30 name="mmse_score" placeholder="">
+                                            </label><br>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            VmInclude: __CURRENT_PATH__/modification_status.html
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            VmInclude: '__COMPONENT__/f/form.01.js'
+            VmInclude: __CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            var load2 = m.load;
+            m.load = function () {
+                load2();
+                console.log(JSON.stringify(m.input))
+                if($("input[name='mmse_available']:checked").val()=='1'){
+                    $('#mmse_score__ID').show();
+                }
+                else {
+                    $('#mmse_score__ID').hide();
+                }
+                if(m.input.participant_record!=undefined){
+                    $('#age__ID').val(m.input.participant_record.Data.age);
+                    $('#month__ID').val(m.input.participant_record.Data.months);
+                }
+            }
+            //-------------------------------------
+            $("input[name='mmse_available']").change(function(){
+                if($("input[name='mmse_available']:checked").val()=='1'){
+                    $('#mmse_score__ID').show();
+                }
+                else {
+                    $('#mmse_score__ID').hide();
+                }
+            });
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width: 800px;
+        }
+
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>
