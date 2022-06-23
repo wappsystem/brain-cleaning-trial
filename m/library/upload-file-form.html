@@ -25,27 +25,20 @@
                             </div>
                             <!-- form group -->
                             <div class="form-group">
+                                <fieldset class="subquestions">
+                                    <h4>Upload File
+                                    </h4>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
                                 <div class="questiongroup ">
                                     <fieldset class="">
-                                        <label><span class="">Was consent given to have an MRI conducted? </span></label><br>
-                                        <label class="radiobuttons">
-                                          <input type="radio" name="mri_consent" value="0" >
-                                          <span class="checkmark"></span> No</label>
-                                        <label class="radiobuttons">
-                                          <input type="radio" name="mri_consent" value="1">
-                                          <span class="checkmark"></span> Yes</label>
+                                        <div class="form-control">
+                                            <u style='cursor:pointer' id=link_File_Name__ID></u>
+                                            <br>
+                                            <input type="file" name=File_Name style="margin-top:6px" /> <button type="button" id=x_File_Name__ID>Remove</button>
+                                        </div>
                                     </fieldset>
-                                </div>
-                            </div>
-                            <div id="mri_consent__ID">
-                                <div class="form-group">
-                                    <div class="questiongroup ">
-                                        <fieldset class="">
-                                            <label><span class="">MRI Consent - Date Signed</span>
-                                                <input class="form-control" type="date" name="mri_consent_date">
-                                            </label><br>
-                                        </fieldset>
-                                    </div>
                                 </div>
                             </div>
                             VmInclude: __CURRENT_PATH__/modification_status.html
@@ -55,30 +48,25 @@
             </div>
         </div>
     </div>
+    VmInclude:__COMPONENT__/m/model.01.html
     <script>
         function F__ID(){
             //-------------------------------------
-            VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__COMPONENT__/f/form.01.js
             VmInclude:__CURRENT_PATH__/shared-form.js
             //-------------------------------------
-            var load2 = m.load;
-            m.load = function () {
-                load2();
-                $('#mri_consent__ID').hide();
-                if($('#D__ID input[name=mri_consent]:checked').val()=='1') $('#mri_consent__ID').show();
+            m.old_load=m.load;
+            m.load=function(){
+                m.old_load();
+                m.set_file_link("File_Name");
             }
             //-------------------------------------
-            $('#D__ID input[name=mri_consent]').change(function(){
-               if($('#D__ID input[name=mri_consent]:checked').val()=='1')  $('#mri_consent__ID').show();
-               else $('#mri_consent__ID').hide();
-            })
-
         }
     </script>
     <style>
         #D__ID .mt-95 {
         max-width:600px;
-    }
+        }
         VmInclude:__CURRENT_PATH__/wappsystem-form.css
     </style>
 </div>

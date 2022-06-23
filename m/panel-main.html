@@ -12,13 +12,7 @@
         		<ul>
         			<li title="Manage participant - Add new. Data entry for single participant. Setup questionnaires."><a href=?/participant-data>Participants</a></li>
         			<!--<li title="Manage participant - status."><a href=?/status-osa-clean-data>Questionnaire status</a></li>-->
-				</ul><br>
-                <span>Sites</span>
-        		<ul>
-        			<li ><a href=?/site-data-osa-clean>Site List</a></li>
-        			<li ><a href=?/site-permission-data-osa-clean>Site Permission</a></li>
-        		</ul><br>
-
+				</ul>
                 <!--                <span>Site List</span>
         		<ul>
         			<li title="We can accomodate any type of randomisation."><a href=?/site-data>Site List</a></li>
@@ -66,19 +60,13 @@
             //--------------------------------------------------------
             var hide_all = function () {
                 $('#unscheduled_show__ID').hide()
-                $('#prescreening_show__ID').hide()
                 $('#screening_show__ID').hide()
-                $('#baseline_show__ID').hide()
-                $('#6months_show__ID').hide()
-                $('#24months_show__ID').hide()
-                $('#treatment_show__ID').hide()
+                $('#visit1_show__ID').hide()
+                $('#visit2_show__ID').hide()
                 $('#unscheduled__ID').css('color', '#555')
-                $('#prescreening__ID').css('color', '#555')
                 $('#screening__ID').css('color', '#555')
-                $('#baseline__ID').css('color', '#555')
-                $('#6months__ID').css('color', '#555')
-                $('#24months__ID').css('color', '#555')
-                $('#treatment__ID').css('color', '#555')
+                $('#visit1__ID').css('color', '#555')
+                $('#visit2__ID').css('color', '#555')
             }
             //--------------------------------------------------------
             $('#unscheduled__ID').on('click', function () {
@@ -87,40 +75,22 @@
                 $('#unscheduled__ID').css('color', 'red')
             })
             //--------------------------------------------------------
-            $('#prescreening__ID').on('click', function () {
-                hide_all();
-                $('#prescreening_show__ID').show()
-                $('#prescreening__ID').css('color', 'red')
-            })
-            //--------------------------------------------------------
             $('#screening__ID').on('click', function () {
                 hide_all();
                 $('#screening_show__ID').show()
                 $('#screening__ID').css('color', 'red')
             })
             //--------------------------------------------------------
-            $('#baseline__ID').on('click', function () {
+            $('#visit1__ID').on('click', function () {
                 hide_all();
-                $('#baseline_show__ID').show()
-                $('#baseline__ID').css('color', 'red')
+                $('#visit1_show__ID').show()
+                $('#visit1__ID').css('color', 'red')
             })
             //--------------------------------------------------------
-            $('#6months__ID').on('click', function () {
+            $('#visit2__ID').on('click', function () {
                 hide_all();
-                $('#6months_show__ID').show()
-                $('#6months__ID').css('color', 'red')
-            })
-            //--------------------------------------------------------
-            $('#24months__ID').on('click', function () {
-                hide_all();
-                $('#24months_show__ID').show()
-                $('#24months__ID').css('color', 'red')
-            })
-            //--------------------------------------------------------
-            $('#treatment__ID').on('click', function () {
-                hide_all();
-                $('#treatment_show__ID').show()
-                $('#treatment__ID').css('color', 'red')
+                $('#visit2_show__ID').show()
+                $('#visit2__ID').css('color', 'red')
             })
             //--------------------------------------------------------            
             $('#panel__ID a').on('click',function(e){

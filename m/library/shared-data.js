@@ -11,13 +11,16 @@ m.set_req=function(){
 };
 //-------------------------------------
 m.load=function(){
-    $('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
-        if(m.input!=undefined && m.input.record!=undefined){
-        $('#export_section__ID').hide();
+    var txt=$vm.module_list[$vm.vm['__ID'].name].task_name;
+    if(m.input!=undefined && m.input.record!=undefined){
+        if(m.input.record.Data.Randomisation_Number=="") txt+=' | Participant: '+m.input.record.Data.Screening_Number;
+        else  txt+=' '+m.input.record.Data.Randomisation_Number;
+       $('#export_section__ID').hide();
     }
     else{
         $('#export_section__ID').show();
     }
+    $('#title__ID').text(txt);
 }
 //-------------------------------------
 m.cell_render=function(records,I,field,td){

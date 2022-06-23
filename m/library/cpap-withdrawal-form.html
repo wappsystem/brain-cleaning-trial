@@ -1,0 +1,109 @@
+<div id=D__ID>
+  <!--third html start -->
+  <div class="container mt-95 mb-3">
+    <div class="row">
+      <!-- form container start -->
+      <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+        <div class="row">
+          <div class="col-12">
+            <!-- form start -->
+            <form id=F__ID>
+              <!---------------------------------------------------->
+              <h3 id="title__ID"></h3>
+              <!-- participant part for all tsak forms -------------------->
+              <div id="participant_div__ID">
+                <div class="form-group">
+                  <fieldset class="subquestions">
+                    <label><span class="">Participant</span>
+                      <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                    </label><br>
+                    <label><span class="">Participant ID</span>
+                      <input type=text name="Participant_uid" class=form-control readonly />
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+              <!-- form group -->
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-sm control-group">
+                    <h4>Q1. Have you gone without CPAP for periods <u>longer than 1 night?</u>?</h4>
+                  </div>
+                </div>
+                <div class="questiongroup">
+                  <fieldset class="pl-4">
+                    <label class="radiobuttons ">
+                      <input type="radio" name="without_cpap" value="1" required>
+                      <span class="checkmark"></span>Yes</label>
+                    <label class="radiobuttons ">
+                      <input type="radio" name="without_cpap" value="0">
+                      <span class="checkmark"></span>No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div id=q2__ID>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-sm control-group">
+                      <h4>Q2. If you had answered ‘yes’ to Q1, did you feel sleepy when you were not using your CPAP device?</h4>
+                    </div>
+                  </div>
+                  <div class="questiongroup">
+                    <fieldset class="pl-4">
+                      <label class="radiobuttons ">
+                        <input type="radio" name="sleepy" value="1">
+                        <span class="checkmark"></span>Yes</label>
+                      <label class="radiobuttons ">
+                        <input type="radio" name="sleepy" value="0">
+                        <span class="checkmark"></span>No</label>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function F__ID() {
+      //-------------------------------------
+      VmInclude:__COMPONENT__/f/form.01.js
+      VmInclude:__CURRENT_PATH__/shared-form.js
+      //-------------------------------------
+      var load2=m.load;
+      m.load=function(){
+        load2();
+        //-------------------------------------
+        if ($("#D__ID input[name=without_cpap]:checked").val() == '1') {
+          $("#D__ID input[name=sleepy]").prop('required', true);
+          $("#q2__ID").show();
+        }
+        else {
+          $("#D__ID input[name=sleepy]").prop('required', false);
+          $("#q2__ID").hide();
+        }
+        //-------------------------------------
+      }
+      //-------------------------------------
+      $("#D__ID input[name=without_cpap]").on('click', function () {
+        if ($("#D__ID input[name=without_cpap]:checked").val() == '1') {
+          $("#D__ID input[name=sleepy]").prop('required', true);
+          $("#q2__ID").show();
+        }
+        else {
+          $("#D__ID input[name=sleepy]").prop('required', false);
+          $("#q2__ID").hide();
+        }
+      });
+    }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+      max-width:600px;
+    }
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

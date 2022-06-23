@@ -1,0 +1,41 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      VmInclude:__CURRENT_PATH__/shared-data.js
+      //-------------------------------------
+      //$('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name); //$('#title__ID').text('consent')
+      //-------------------------------------
+      var fields="consent_1,consent_2,consent_3,consent_4,consent_5,consent_6,consent_7,consent_8,consent_9,consent_10,participation_yes,participation_no";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+      //-------------------------------------
+      var cell_render=m.cell_render;
+        m.cell_render=function(records,I,field,td){
+            cell_render(records,I,field,td);
+            switch(field){
+              case 'consent_1':
+              case 'consent_2':
+              case 'consent_3':
+              case 'consent_4':
+              case 'consent_5':
+              case 'consent_6':
+              case 'consent_7':
+              case 'consent_8':
+              case 'consent_9':
+              case 'consent_10':
+              case 'participation_yes':
+              case 'participation_no':
+                  if(records[I].Data[field]=='on') td.html('Yes')
+                  else td.html('')
+                  break;
+            }
+        }
+  }
+</script>
+<style>
+  VmInclude:__COMPONENT__/g/grid.01.css
+</style>

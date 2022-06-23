@@ -288,4 +288,15 @@
         margin-left:0;
     }
 }
-
+@media (min-width: 1200px) {
+    #D__ID .container {max-width:900px}
+}
+@media (min-width: 992px) {
+    #D__ID .container {max-width:900px}
+}
+@media (min-width: 768px) {
+    #D__ID .container {max-width:900px}
+}
+@media (min-width: 576px) {
+    #D__ID .container {max-width:900px}
+}

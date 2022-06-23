@@ -19,14 +19,9 @@
     		var old_info='';
     		var participant_record;
     		var count={}
-            var date_6_month;
-            var date_24_month;
-            var date_baseline;
-            var now;
     		var participant_info=function(record){ 
-                if(record.Data.Randomisation_Number!=undefined && record.Data.Randomisation_Number!='') {return record.Data.Randomisation_Number+' '+record.Data.Subject_Initials; }
-                else if(record.Data.Screening_Number!=undefined && record.Data.Screening_Number!='') {return record.Data.Screening_Number+' '+record.Data.Subject_Initials; }
-                else if(record.Data.Pre_Screening_Number!=undefined && record.Data.Pre_Screening_Number!='') {return record.Data.Pre_Screening_Number+' '+record.Data.Subject_Initials; }
+                if(record.Data.Randomisation_Number!=undefined && record.Data.Randomisation_Number!='') {return record.Data.Randomisation_Number; }
+                else if(record.Data.Screening_Number!=undefined && record.Data.Screening_Number!='') {return record.Data.Screening_Number;}
                 else return record.UID;
 			}
 			//DEMO VERSION
@@ -34,6 +29,20 @@
 				$('#D__ID').css('background-image','url("images/demo.png")')
 				//$('#D__ID').css('background-image','url("m/test.png")')
 			}			
+    		//---------------------------------------------
+    		$('#D__ID').on('load',function(){
+				participant_record=m.input.record;
+    			if(participant_record==undefined){
+    				$('#info__ID').text("No individual participant info was found.");
+    				return;
+    			}
+    			var info="Participant:"+participant_info(participant_record);
+    			if(old_info!=info){
+    				old_info=info;
+    				set_counting();
+    			}
+    			$('#info__ID').text(info);
+    		})
 			//--------------------------------------------------------
             $('#panel__ID a').on('click',function(e){
                 e.preventDefault();
@@ -93,75 +102,16 @@
     				else clear_counting();
 				})
     		}
-    		//---------------------------------------------
-    		/*$('#D__ID').on('show',function(){
-                date_6_month='';
-				participant_record=m.input.record;
-                console.log(JSON.stringify(m.input.record))
-    			if(participant_record==undefined){
-    				$('#info__ID').text("No individual participant info was found.");
-    				return;
-    			}
-    			var info="Participant: "+participant_info(participant_record);
-    			if(old_info!=info){
-    				old_info=info;
-    				set_counting();
-    			}
-    			$('#info__ID').text(info);
-                var bl_date=""
-                hide_all();
-                if(participant_record.Data.Screening_Number!=""){
-                    $('#screening__ID').css('color', '#555')
-                    console.log("screening")
-                }
-                if(participant_record.Data.Randomisation_Number!=""){
-                    console.log("baseline")
-                    $('#baseline__ID').css('color', '#555')
-                    $('#treatment__ID').css('color', '#555')
-                    jQuery.ajaxSetup({async:false});
-                    tb=$vm.module_list['date-bl-data-osa-clean'].Table;
-                    $vm.request({cmd:"find",table:tb,query:{'Data.Participant_uid':participant_record.UID.toString()},options:{}},function(res){
-                        if(res.sys.permission==false){
-                            return;
-                        }
-                        if(res.result.length>0){
-                            bl_date=res.result[0].Data.date;
-                            bl_date=bl_date.split('-');
-                            date_baseline = new Date(bl_date[0],(parseInt(bl_date[1])-1).toString(),bl_date[2])
-                            date_6_month = new Date(date_baseline.setMonth(date_baseline.getMonth()+6));
-                            date_24_month = new Date(date_baseline.setMonth(date_baseline.getMonth()+18));
-                            date_baseline = new Date(bl_date[0],(parseInt(bl_date[1])-1).toString(),bl_date[2])
-                            now=new Date()
-                            $('#baseline__ID').text('Baseline - '+ date_baseline.getDate()+'/'+(date_baseline.getMonth()+1)+'/'+date_baseline.getFullYear())
-                            $('#6months__ID').text('6 Month - '+ date_6_month.getDate()+'/'+(date_6_month.getMonth()+1)+'/'+date_6_month.getFullYear())
-                            $('#24months__ID').text('24 Month - '+ date_24_month.getDate()+'/'+(date_24_month.getMonth()+1)+'/'+date_24_month.getFullYear())
-                            if(now.getTime()> date_6_month.getTime()) $('#6months__ID').css('color', '#555');
-                            if(now.getTime()> date_24_month.getTime()) $('#24months__ID').css('color', '#555');
-                        }
-                    });
-                    jQuery.ajaxSetup({async:true});
-
-
-                }
-       		})*/
-            var hide_all = function () {
-                $('#baseline__ID').text('Baseline');
-                $('#6months__ID').text('6 Month');
-                $('#24months__ID').text('24 Month');
+           //--------------------------------------------------------
+		   var hide_all = function () {
                 $('#unscheduled_show__ID').hide()
-                $('#prescreening_show__ID').hide()
                 $('#screening_show__ID').hide()
-                $('#baseline_show__ID').hide()
-                $('#6months_show__ID').hide()
-                $('#24months_show__ID').hide()
-                $('#treatment_show__ID').hide()
+                $('#visit1_show__ID').hide()
+                $('#visit2_show__ID').hide()
                 $('#unscheduled__ID').css('color', '#555')
-                $('#prescreening__ID').css('color', '#555')
-                $('#screening__ID').css('color', '#555');
-                $('#baseline__ID').css('color', '#555');
-                $('#6months__ID').css('color', '#555');
-                $('#24months__ID').css('color', '#555');
-                $('#treatment__ID').css('color', '#555');
+                $('#screening__ID').css('color', '#555')
+                $('#visit1__ID').css('color', '#555')
+                $('#visit2__ID').css('color', '#555')
             }
             //--------------------------------------------------------
             $('#unscheduled__ID').on('click', function () {
@@ -170,40 +120,22 @@
                 $('#unscheduled__ID').css('color', 'red')
             })
             //--------------------------------------------------------
-            $('#prescreening__ID').on('click', function () {
-                hide_all();
-                $('#prescreening_show__ID').show()
-                $('#prescreening__ID').css('color', 'red')
-            })
-            //--------------------------------------------------------
             $('#screening__ID').on('click', function () {
                 hide_all();
                 $('#screening_show__ID').show()
                 $('#screening__ID').css('color', 'red')
             })
             //--------------------------------------------------------
-            $('#baseline__ID').on('click', function () {
+            $('#visit1__ID').on('click', function () {
                 hide_all();
-                $('#baseline_show__ID').show()
-                $('#baseline__ID').css('color', 'red')
+                $('#visit1_show__ID').show()
+                $('#visit1__ID').css('color', 'red')
             })
             //--------------------------------------------------------
-            $('#6months__ID').on('click', function () {
+            $('#visit2__ID').on('click', function () {
                 hide_all();
-                $('#6months_show__ID').show()
-                $('#6months__ID').css('color', 'red')
-            })
-            //--------------------------------------------------------
-            $('#24months__ID').on('click', function () {
-                hide_all();
-                $('#24months_show__ID').show()
-                $('#24months__ID').css('color', 'red')
-            })
-            //--------------------------------------------------------
-            $('#treatment__ID').on('click', function () {
-                hide_all();
-                $('#treatment_show__ID').show()
-                $('#treatment__ID').css('color', 'red')
+                $('#visit2_show__ID').show()
+                $('#visit2__ID').css('color', 'red')
             })
     		//--------------------------------------------------------
     		$('#count__ID').on('click',function(){

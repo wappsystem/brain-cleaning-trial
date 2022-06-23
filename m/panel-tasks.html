@@ -1,12 +1,9 @@
 <div class='nav__ID'>
     <div class=ul-show>
         <span id=unscheduled__ID style="cursor:pointer">Unscheduled forms</span><br>
-        <span id=prescreening__ID style="cursor:pointer">Pre-Screening</span><br>
         <span id=screening__ID style="cursor:pointer">Screening</span><br>
-        <span id=baseline__ID style="cursor:pointer">Baseline</span><br>
-        <span id=6months__ID style="cursor:pointer">6 Month</span><br>
-        <span id=24months__ID style="cursor:pointer">24 Month</span><br>
-        <span id=treatment__ID style="cursor:pointer">Treatment Visit</span><br>
+        <span id=visit1__ID style="cursor:pointer">Visit #1</span><br>
+        <span id=visit2__ID style="cursor:pointer">Visit #2</span><br>
     </div>
 </div>
 <div class='nav__ID' id=unscheduled_show__ID style='display:none'>
@@ -22,203 +19,64 @@
         <p class="small font-italic text-muted mt-1"></p>
     </ul>
 </div>
-<div class='nav__ID' id=prescreening_show__ID style='display:none'>
-    <span>Pre-Screening </span>
-    <ul>
-        <li><a href=?/date-ps-data-osa-clean>Visit Date</a></li>
-        <p class="small font-italic text-muted mt-1"></p>
-        <span>Participant Consent </span>
-        <ul>
-            <li><a href=?/consent-ps-data-osa-clean>Informed Consent </a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Eligibility</span>
-        <ul>
-            <li><a href=?/demographics-ps-data-osa-clean>Demographics</a></li>
-            <li><a href=?/wristox-ps-data-osa-clean>WristOx<sub>2</sub></a></li>
-            <!--<li><a href=?/mmse-ps-data-osa-clean>MMSE</a></li>-->
-            <li><a href=?/eligibility-ps-data-osa-clean>Eligibility and Acceptance</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-    </ul>
-</div>
 <div class='nav__ID' id=screening_show__ID style='display:none'>
-    <span>Screening</span>
+    <span>Screening Visit</span>
     <ul>
         <li><a href=?/date-s-data-osa-clean>Visit Date</a></li>
-        <span>Participant Consent </span>
-        <ul>
-            <li><a href=?/consent-s-data-osa-clean>Informed Consent</a></li>
-            <li><a href=?/consent-mri-data-osa-clean>MRI Informed Consent</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Screening Assessment </span>
-        <ul>
-            <!--<li><a href=?/mmse-s-data-osa-clean>MMSE (After 6 months of pre-screening)</a></li>-->
-            <li><a href=?/demographics-s-data-osa-clean>Demographics</a></li>
-            <li><a href=?/medical-predef-s-data-osa-clean>Medical History Predefined conditions</a></li>
-            <li><a href=?/medical-assessment-s-data-osa-clean>Medical History</a></li>
-            <!--<li><a href=?/biomedical-measurements-s-data-osa-clean>Biomedical Measurements</a></li>-->
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Eligibility </span>
-        <ul>
-            <li><a href=?/in-ex-s-data-osa-clean>Inclusion/ Exclusion</a></li>
+        <li><a href=?/consent-s-data-osa-clean>PIS and Consent Form</a></li>
+        <li><a href=?/anthropometry-s-data-osa-clean>Anthropometry</a></li>
+        <li><a href=?/in-ex-s-data-osa-clean>Inclusion/ Exclusion</a></li>
+        <li><a href=?/medication-s-data-osa-clean>Medication History</a></li>
+        <li><a href=?/medical-history-s-data-osa-clean>Medical History</a></li>
+        <li><a href=?/ess-s-data-osa-clean>Epworth Sleepiness Scale (ESS)</a></li>
+        <li><a href=?/cpap-withdrawal-s-data-osa-clean>CPAP Withdrawal Questionnaire</a></li>
+        <li><a href=?/psg-report-s-data-osa-clean>PSG Diagnostic Report – Upload</a></li>
+        <li><a href=?/cpap-compliance-s-data-osa-clean>CPAP Compliance – Upload</a></li>
             <p class="small font-italic text-muted mt-1"></p>
         </ul>
     </ul>
 </div>
-<div id=baseline_show__ID style='display:none'>
+<div id=visit1_show__ID style='display:none'>
     <div class='nav__ID'>
-        <span>Baseline</span>
-        <ul>
-            <li><a href=?/date-bl-data-osa-clean>Visit Date</a></li>
-            <li><a href=?/btb-bl-data-osa-clean>Blood Test</a></li>
-            <li><a href=?/watchpat-bl-data-osa-clean>WatchPat</a></li>
-            <li><a href=?/biomedical-measurements-bl-data-osa-clean>Biomedical Measurements</a></li>
-            <!--<li><a href=?/stop-bang-bl-data-osa-clean>STOP BANG</a></li>
-            <li><a href=?/cirs-bl-data-osa-clean>Cumulative Illness Rating Scale- Geriatric Version</a></li>-->
-        </ul>
-        <span>Imaging </span>
-        <ul>
-            <li><a href=?/mri-bl-data-osa-clean>MRI data</a></li>
-            <li><a href=?/pet-bl-data-osa-clean>PET data</a></li>
+        <span>Experimental Visit #1</span>
+        <li><a href=?/date-v1-data-osa-clean>Visit Date</a></li>
+        <li><a href=?/anthropometry-v1-data-osa-clean>Anthropometry</a></li>
+        <li><a href=?/medication-v1-data-osa-clean>Medication History</a></li>
+        <li><a href=?/medical-history-v1-data-osa-clean>Medical History</a></li>
+        <li><a href=?/ess-v1-data-osa-clean>Epworth Sleepiness Scale (ESS)</a></li>
+        <li><a href=?/sleep-diary-v1-data-osa-clean>AASM 2-week Sleep Diary</a></li>
             <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Neuropsychological Assessment </span>
         <ul>
-            <li><a href=?/ravlt-7-bl-data-osa-clean>RAVLT</a></li>
-            <li><a href=?/trail-part-b-bl-data-osa-clean>Trail Making Test Part A and B</a></li>
-            <li><a href=?/dkefs-bl-data-osa-clean>DKEFS Stroop Test</a></li>
-            <li><a href=?/sdmt-bl-data-osa-clean>Symbol Digit Modalities Test</a></li>
-            <li><a href=?/cantab-bl-data-osa-clean>CANTAB</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
         </ul>
-        <span>Neuropsychological Assessment - Double entry</span>
+        <span>Night 1 Tests </span>
+        What data will you store in the database?
         <ul>
-            <li><a href=?/ravlt-7-de-bl-data-osa-clean>RAVLT</a></li>
-            <li><a href=?/trail-part-b-de-bl-data-osa-clean>Trail Making Test Part A and B</a></li>
-            <li><a href=?/dkefs-de-bl-data-osa-clean>DKEFS Stroop Test</a></li>
-            <li><a href=?/sdmt-de-bl-data-osa-clean>Symbol Digit Modalities Test</a></li>
-            <li><a href=?/cantab-de-bl-data-osa-clean>CANTAB</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
         </ul>
-    </div>
-    <div class='nav__ID'>
+        <span>Night 2 Tests </span>
+        What data will you store in the database?
         <ul>
-            <span>Questionnaires </span>
-            <ul>
-                <li><a href=?/gad-7-bl-data-osa-clean>Generalised Anxiety Disorder – 7 (GAD-7)</a></li>
-                <li><a href=?/psqi-bl-data-osa-clean>The Pittsburgh Sleep Quality Index (PSQI)</a></li>
-                <li><a href=?/audit-part-bl-data-osa-clean>Alcohol Use Disorders Identification Test (Audit)</a></li>
-                <li><a href=?/phq-9-bl-data-osa-clean>The Patient Health Questionnaire-9 (PHQ-9)</a></li>
-                <li><a href=?/bc-cci-bl-data-osa-clean>British Columbia Cognitive Complaints Inventory (BC-CCI)</a></li>
-                <li><a href=?/eq-5d-bl-data-osa-clean>EQol-5D</a></li>
-                <li><a href=?/ess-bl-data-osa-clean>Epworth Sleepiness Scale (ESS)</a></li>
-                <p class="small font-italic text-muted mt-1"></p>
-            </ul>
         </ul>
     </div>
 </div>
-<div id=6months_show__ID style='display:none'>
+<div id=visit2_show__ID style='display:none'>
     <div class='nav__ID'>
-        <span>6 Months</span>
-        <ul>
-            <li><a href=?/date-6-data-osa-clean>Visit Date</a></li>
-            <li><a href=?/btb-6-data-osa-clean>Blood Test</a></li>
-            <li><a href=?/watchpat-6-data-osa-clean>WatchPat</a></li>
-            <li><a href=?/biomedical-measurements-6-data-osa-clean>Biomedical Measurements</a></li>
-        </ul>
-        <span>Neuropsychological Assessment </span>
-        <ul>
-            <li><a href=?/ravlt-7-6-data-osa-clean>RAVLT</a></li>
-            <li><a href=?/trail-part-b-6-data-osa-clean>Trail Making Test Part A and B</a></li>
-            <li><a href=?/dkefs-6-data-osa-clean>DKEFS Stroop Test</a></li>
-            <li><a href=?/sdmt-6-data-osa-clean>Symbol Digit Modalities Test</a></li>
-            <li><a href=?/cantab-6-data-osa-clean>CANTAB</a></li>
+        <span>Experimental Visit #2</span>
+        <li><a href=?/date-v1-data-osa-clean>Visit Date</a></li>
+        <li><a href=?/anthropometry-v1-data-osa-clean>Anthropometry</a></li>
+        <li><a href=?/medication-v1-data-osa-clean>Medication History</a></li>
+        <li><a href=?/medical-history-v1-data-osa-clean>Medical History</a></li>
+        <li><a href=?/ess-v1-data-osa-clean>Epworth Sleepiness Scale (ESS)</a></li>
+        <li><a href=?/sleep-diary-v1-data-osa-clean>AASM 2-week Sleep Diary</a></li>
             <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Neuropsychological Assessment - Double entry</span>
         <ul>
-            <li><a href=?/ravlt-7-de-6-data-osa-clean>RAVLT</a></li>
-            <li><a href=?/trail-part-b-de-6-data-osa-clean>Trail Making Test Part A and B</a></li>
-            <li><a href=?/dkefs-de-6-data-osa-clean>DKEFS Stroop Test</a></li>
-            <li><a href=?/sdmt-de-6-data-osa-clean>Symbol Digit Modalities Test</a></li>
-            <li><a href=?/cantab-de-6-data-osa-clean>CANTAB</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
         </ul>
-    </div>
-    <div class='nav__ID'>
+        <span>Night 1 Tests </span>
+        What data will you store in the database?
         <ul>
-            <span>Questionnaires </span>
-            <ul>
-                <li><a href=?/phq-9-6-data-osa-clean>The Patient Health Questionnaire-9 (PHQ-9)</a></li>
-                <li><a href=?/bc-cci-6-data-osa-clean>British Columbia Cognitive Complaints Inventory (BC-CCI)</a></li>
-                <li><a href=?/eq-5d-6-data-osa-clean>EQol-5D</a></li>
-                <li><a href=?/ess-6-data-osa-clean>Epworth Sleepiness Scale (ESS)</a></li>
-                <p class="small font-italic text-muted mt-1"></p>
-            </ul>
         </ul>
-    </div>
-</div>
-<div id=24months_show__ID style='display:none'>
-    <div class='nav__ID'>
-        <span>24 Months</span>
+        <span>Night 2 Tests </span>
+        What data will you store in the database?
         <ul>
-            <li><a href=?/date-24-data-osa-clean>Visit Date</a></li>
-            <li><a href=?/btb-24-data-osa-clean>Blood Test</a></li>
-            <li><a href=?/watchpat-24-data-osa-clean>WatchPat</a></li>
-            <li><a href=?/biomedical-measurements-24-data-osa-clean>Biomedical Measurements</a></li>
-            <!--<li><a href=?/cirs-24-data-osa-clean>Cumulative Illness Rating Scale- Geriatric Version</a></li>-->
-        </ul>
-        <span>Imaging </span>
-        <ul>
-            <li><a href=?/mri-24-data-osa-clean>MRI data</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Neuropsychological Assessment </span>
-        <ul>
-            <li><a href=?/ravlt-7-24-data-osa-clean>RAVLT</a></li>
-            <li><a href=?/trail-part-b-24-data-osa-clean>Trail Making Test Part A and B</a></li>
-            <li><a href=?/dkefs-24-data-osa-clean>DKEFS Stroop Test</a></li>
-            <li><a href=?/sdmt-24-data-osa-clean>Symbol Digit Modalities Test</a></li>
-            <li><a href=?/cantab-24-data-osa-clean>CANTAB</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Neuropsychological Assessment - Double entry</span>
-        <ul>
-            <li><a href=?/ravlt-7-de-24-data-osa-clean>RAVLT</a></li>
-            <li><a href=?/trail-part-b-de-24-data-osa-clean>Trail Making Test Part A and B</a></li>
-            <li><a href=?/dkefs-de-24-data-osa-clean>DKEFS Stroop Test</a></li>
-            <li><a href=?/sdmt-de-24-data-osa-clean>Symbol Digit Modalities Test</a></li>
-            <li><a href=?/cantab-de-24-data-osa-clean>CANTAB</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-    </div>
-    <div class='nav__ID'>
-        <ul>
-            <span>Questionnaires </span>
-            <ul>
-                <li><a href=?/phq-9-24-data-osa-clean>The Patient Health Questionnaire-9 (PHQ-9)</a></li>
-                <li><a href=?/bc-cci-24-data-osa-clean>British Columbia Cognitive Complaints Inventory (BC-CCI)</a></li>
-                <li><a href=?/eq-5d-24-data-osa-clean>EQol-5D</a></li>
-                <li><a href=?/ess-24-data-osa-clean>Epworth Sleepiness Scale (ESS)</a></li>
-                <p class="small font-italic text-muted mt-1"></p>
-            </ul>
-        </ul>
-    </div>
-</div>
-<div id=treatment_show__ID style='display:none'>
-    <div class='nav__ID'>
-        <span>First Treatment Visit</span>
-        <ul>
-            <li><a href=?/treatment-1-data-osa-clean>First Visit</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
-        </ul>
-        <span>Treatment Visit Follow-up </span>
-        <ul>
-            <li><a href=?/treatment-fu-data-osa-clean>Follow-up</a></li>
-            <p class="small font-italic text-muted mt-1"></p>
         </ul>
     </div>
 </div>
