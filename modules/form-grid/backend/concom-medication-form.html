@@ -1,0 +1,175 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95">
+        <!-- form container start -->
+        <div class="formbox">
+            <!-- form start -->
+            <form id="F__ID">
+                <span id=title__ID></span>
+                <!-- participant name and study id -->
+                <div id="participant_div__ID">
+                    <div class="formgroup">
+                        <fieldset class="grid-container-2">
+                            <div>
+                                <label><span class="question">Participant</span>
+                                    <input type=text name="Participant" class=formcontrol id=Participant__ID
+                                        data-id="Participant" />
+                                </label>
+                            </div>
+                            <div>
+                                <label><span class="question">Participant ID</span>
+                                    <input type=text name="Participant_uid" class=formcontrol readonly />
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- form group -->
+                <div class="formgroup">
+                    <div class="questiongroup">
+                        <fieldset class="subquestions">
+                            <label><span class="question">Time Point</span>
+                                <select name="Time_Point" class=formcontrol>
+                                    <option></option>
+                                    <option>Screening</option>
+                                    <option>Visit 1</option>
+                                    <option>Visit 2</option>
+                                </select>
+                            </label><br>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="formgroup">
+                    <div class="questiongroup ">
+                        <fieldset class="">
+                            <label><span class="question">Medication Name</span>
+                                <input class="formcontrol  " type="text" name="Medication">
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="formgroup">
+                    <div class="questiongroup ">
+                        <fieldset class="subquestions">
+                            <label style=""><span class="question">Indication</span>
+                                <input class="formcontrol fullwidth" type="text" name="Indication">
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="formgroup">
+                        <fieldset class="">
+                            <span class="question"><p>Dose</p></span>
+                            <div class="grid-container-2">                  
+                                <div>
+                                    <label><span class="question">Amount</span>
+                                        <input class="formcontrol threeqwidth" type="text" name="Amount">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label><span class="question">Units</span>
+                                        <input class="formcontrol threeqwidth" type="text" name="Units">
+                                    </label><br>
+                                </div>
+                                <div class="grid-container-2">                  
+                                    <div>
+                                        <label><span class="question">Frequency</span>
+                                                <select name="Frequency" class="formcontrol fullwidth">
+                                                    <option></option>
+                                                    <option value="QD">QD = 1 time daily</option>
+                                                    <option value="BID">BID = 2 times daily</option>
+                                                    <option value="TID">TID = 3 times daily</option>
+                                                    <option value="QID">QID = 4 times daily</option>
+                                                    <option value="PRN">PRN = as needed</option>
+                                                    <option value="BID/QOM">BID/QOM = Twice a day every other month</option>
+                                                    <option value="w/meal">w/meal = with meals</option>
+                                                    <option value="w/snack">w/snack = with snack</option>
+                                                </select>
+                                            </label>
+                                    </div>
+                                    <div>
+                                        <label><span class="question">Route</span>
+                                            <select name="Route" class="formcontrol fullwidth">
+                                                <option></option>
+                                                <option value="GT">GT = Gastric</option>
+                                                <option value="IV">IV = Intravenous</option>
+                                                <option value="SQ">SQ = subcutaneous</option>
+                                                <option value="NG">NG = Nasogastric</option>
+                                                <option value="NAS">NAS = Nasal</option>
+                                                <option value="RE">RE = Rectal</option>
+                                                <option value="TO">TO = Topical</option>
+                                                <option value="PO">PO = Oral</option>
+                                                <option value="IH">IH = Inhaled</option>
+                                                <option value="IM">IM = Intramuscular</option>
+                                                <option value="IN">IN = Intranasal</option>
+                                            </select>
+                                        </label>
+                                </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                </div>
+                <div class="formgroup">
+                    <div class="questiongroup ">
+                        <fieldset class="grid-container-2">
+                            <div>
+                            <label><span class="question">Start Date</span>
+                                <input class="formcontrol" type="date" name="Start_Date">
+                            </label><br>
+                            </div>
+                            <div>
+                            <label><span class="question">End Date</span>
+                                <input class="formcontrol" type="date" name="End_Date">
+                            </label><br>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="formgroup">
+                    <div class="questiongroup">
+                        <fieldset class="grid-container-2">
+                            <div>
+                            <label><span class="question">Ongoing?</span>
+                                <select name="Ongoing" class=formcontrol>
+                                    <option></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </label><br>
+                            </div>
+                            <div>
+                            <label><span class="question">For AE?</span>
+                                <select name="AE" class=formcontrol>
+                                    <option></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </label><br>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                VmInclude: __HOST__/assets/html/modification_status.html
+            </form>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            VmInclude: '__HOST__/assets/js/form.01.js'
+            VmInclude: '__HOST__/assets/js/shared-form.js'
+            //-------------------------------------
+            var load2 = m.load;
+            m.load = function () {
+                load2();
+                if ($('[type="date"]').prop('type') != 'date') {
+                    $('[type="date"]').datepicker();
+                }
+            }
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        /*VmInclude:__HOST__/assets/css/wapp-form.css*/
+    </style>
+</div>

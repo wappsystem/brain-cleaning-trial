@@ -1,0 +1,939 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3" >
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3 id=title__ID></h3>
+                            <div id="participant_div__ID">
+                                <div class="form-group box">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                    <h4>Här är en lista över möjliga symptom, funktionsnedsättningar eller känslomässiga följder av
+                                        dina näs- och
+                                        bihålebesvär. Vi ber dig att skatta besvärsgraden enligt nedan:</h4>
+                            </div>
+                            <div class="form-group sticky-top shadow-sm bg-light">
+                                <div id=legend__ID class="questiongroup ">
+                                    <label><u>Gradering av besvär</u></label>
+                                    <fieldset class="">
+                                        <label class="radiobuttons" style='cursor:default!important'>
+                                            <span class="checkmark no-dot">0</span>= inga besvär
+                                        </label><br>
+                                        <label class="radiobuttons" style='cursor:default!important'>
+                                            <span class="checkmark no-dot">1</span>= minimala besvär
+                                        </label><br>
+                                        <label class="radiobuttons" style='cursor:default!important'>
+                                            <span class="checkmark no-dot">2</span>= lindriga besvär
+                                        </label><br>
+                                        <label class="radiobuttons" style='cursor:default!important'>
+                                            <span class="checkmark no-dot">3</span>= måttliga besväg
+                                        </label><br>
+                                        <label class="radiobuttons" style='cursor:default!important'>
+                                            <span class="checkmark no-dot">4</span>= uttalade besvär
+                                        </label><br>
+                                        <label class="radiobuttons" style='cursor:default!important'>
+                                            <span class="checkmark no-dot">5</span>= värsta tänkbara besvär
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                                <button type="button" id="btn_legend__ID" class="btn btn-primary mb-1 mt-0 mx-0 p-1">Göm</button>
+                            </div>
+                            <div class="form-group">
+                                <fieldset class="subquestions">
+                                    <h4>Hur mycket har du besvärats av vart och ett av följande problem från näsan/bihålorna under
+                                        de senaste två
+                                        veckorna?</h4>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                <h4>1. Behov av att snyta näsan</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_sniff" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_sniff" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_sniff" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_sniff" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_sniff" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_sniff" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_sniff__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>2. Nysningar</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_sneez" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_sneez" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_sneez" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_sneez" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_sneez" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_sneez" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_sneez__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>3. Rinnande näsa</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_run" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_run" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_run" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_run" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_run" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_run" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_run__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>4. Nästäppa</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_cong" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_cong" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_cong" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_cong" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_cong" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_cong" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_cong__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>5. Förlust av lukt eller smak</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_smell" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_smell" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_smell" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_smell" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_smell" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_smell" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_smell__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>6. Hosta</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_cough" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_cough" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_cough" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_cough" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_cough" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_cough" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_cough__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>7. Baksnuva (slem i halsen)</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_bcold" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_bcold" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_bcold" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_bcold" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_bcold" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_bcold" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_bcold__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>8. Tjock snuva</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_tcold" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_tcold" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_tcold" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_tcold" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_tcold" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_tcold" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_tcold__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>9. Lockkänsla i örat</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_earl" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_earl" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_earl" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_earl" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_earl" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_earl" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_earl__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>10. Yrsel/ostadighet</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_dizz" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_dizz" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_dizz" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_dizz" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_dizz" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_dizz" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_dizz__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>11. Öronsmärta</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_earp" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_earp" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_earp" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_earp" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_earp" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_earp" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_earp__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>12. Smärta/tryck i ansiktet</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_fpain" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_fpain" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_fpain" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_fpain" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_fpain" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_fpain" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_fpain__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>13. Svårt att somna</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_sleep" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_sleep" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_sleep" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_sleep" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_sleep" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_sleep" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_sleep__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>14. Vaknar på natten</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_wake" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_wake" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_wake" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_wake" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_wake" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_wake" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_wake__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>15. Sover dåligt</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_bsleep" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_bsleep" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_bsleep" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_bsleep" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_bsleep" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_bsleep" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_bsleep__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>16. Vaknar trött</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_wakeT" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_wakeT" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_wakeT" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_wakeT" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_wakeT" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_wakeT" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_wakeT__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>17. Trötthet/orkeslöshet/bristande energi</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_tired" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_tired" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_tired" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_tired" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_tired" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_tired" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_tired__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>18. Nedsatt prestationsförmåga</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_pref" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_pref" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_pref" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_pref" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_pref" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_pref" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_pref__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>19. Minskad koncentrationsförmåga</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_konc" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_konc" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_konc" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_konc" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_konc" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_konc" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_konc__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>20. Känsla av frustration, rastlöshet eller irritation</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_frust" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_frust" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_frust" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_frust" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_frust" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_frust" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_frust__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>21. Ledsen/sorgsen</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_sad" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_sad" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_sad" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_sad" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_sad" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_sad" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_sad__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>22. Besvärad/generad pga dina näs-bihålebesvär</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons" title="inga besvär">
+                                            <input type="radio" name="snot_trouble" value="0" required>
+                                            <span class="checkmark no-dot">0</span>
+                                        </label>
+                                        <label class="radiobuttons" title="minimala besvär">
+                                            <input type="radio" name="snot_trouble" value="1">
+                                            <span class="checkmark no-dot">1</span>
+                                        </label>
+                                        <label class="radiobuttons" title="lindriga besvär">
+                                            <input type="radio" name="snot_trouble" value="2">
+                                            <span class="checkmark no-dot">2</span>
+                                        </label>
+                                        <label class="radiobuttons" title="måttliga besväg">
+                                            <input type="radio" name="snot_trouble" value="3">
+                                            <span class="checkmark no-dot">3</span>
+                                        </label>
+                                        <label class="radiobuttons" title="uttalade besvär">
+                                            <input type="radio" name="snot_trouble" value="4">
+                                            <span class="checkmark no-dot">4</span>
+                                        </label>
+                                        <label class="radiobuttons" title="värsta tänkbara besväg">
+                                            <input type="radio" name="snot_trouble" value="5">
+                                            <span class="checkmark no-dot">5</span>
+                                        </label>
+                                    </fieldset>
+                                    <label id=snot_trouble__ID>&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="box" style="text-align:right">
+                                <div class="box-item">
+                                    <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            /*VmInclude:__COMPONENT__/f/form.01.js*/
+            /*VmInclude:__HOST__/assets/js/shared-form.js*/
+            //-------------------------------------
+            $('#btn_legend__ID').on('click', function () {
+                if ($('#btn_legend__ID').text() == 'Göm') {
+                    $('#btn_legend__ID').text('Visa');
+                    $('#legend__ID').hide();
+                }
+                else {
+                    $('#btn_legend__ID').text('Göm');
+                    $('#legend__ID').show();
+                }
+            });
+            $("#D__ID input[name=snot_sniff]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_sniff]:checked").val())
+                $("#snot_sniff__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_sneez]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_sneez]:checked").val())
+                $("#snot_sneez__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_run]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_run]:checked").val())
+                $("#snot_run__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_cong]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_cong]:checked").val())
+                $("#snot_cong__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_smell]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_smell]:checked").val())
+                $("#snot_smell__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_cough]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_cough]:checked").val())
+                $("#snot_cough__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_bcold]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_bcold]:checked").val())
+                $("#snot_bcold__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_tcold]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_tcold]:checked").val())
+                $("#snot_tcold__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_earl]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_earl]:checked").val())
+                $("#snot_earl__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_dizz]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_dizz]:checked").val())
+                $("#snot_dizz__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_earp]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_earp]:checked").val())
+                $("#snot_earp__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_fpain]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_fpain]:checked").val())
+                $("#snot_fpain__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_sleep]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_sleep]:checked").val())
+                $("#snot_sleep__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_wake]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_wake]:checked").val())
+                $("#snot_wake__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_bsleep]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_bsleep]:checked").val())
+                $("#snot_bsleep__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_wakeT]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_wakeT]:checked").val())
+                $("#snot_wakeT__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_tired]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_tired]:checked").val())
+                $("#snot_tired__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_pref]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_pref]:checked").val())
+                $("#snot_pref__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_konc]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_konc]:checked").val())
+                $("#snot_konc__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_frust]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_frust]:checked").val())
+                $("#snot_frust__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_sad]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_sad]:checked").val())
+                $("#snot_sad__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            $("#D__ID input[name=snot_trouble]").on('click', function () {
+                var t=set_selected_text($("#D__ID input[name=snot_trouble]:checked").val())
+                $("#snot_trouble__ID").text(t).css('padding-top', '0').css('color', '#EA7859');
+            })
+            //-------------------------------------
+            var load2 = m.load;
+            m.load = function () {
+                load2();
+                for (var i = 0; i < 8; i++) {
+                    set_selected_text(i + 1)
+                }
+                $('#D__ID').css('overflow', 'visible');
+            }
+            //-------------------------------------
+            var set_selected_text = function (i) {
+                switch (i) {
+                    case '0':
+                        return "inga besvär";
+                        break;
+                    case '1':
+                        return "minimala besvär";
+                        break;
+                    case '2':
+                        return "lindriga besvär";
+                        break;
+                    case '3':
+                        return "måttliga besvär";
+                        break;
+                    case '4':
+                        return "uttalade besvär";
+                        break;
+                    case '5':
+                        return "värsta tänkbara besvär";
+                        break;
+                    default:
+                        return "";
+                        break;
+                }
+            }
+            //-------------------------------------
+            var before_submit = m.before_submit;
+            m.before_submit = function (data, index) {
+                data.snot22 = (parseInt(data.snot_sniff)+parseInt(data.snot_sneez)+parseInt(data.snot_run)+parseInt(data.snot_cong)+parseInt(data.snot_smell)+parseInt(data.snot_cough)+parseInt(data.snot_bcold)+parseInt(data.snot_tcold)+parseInt(data.snot_earl)+parseInt(data.snot_dizz)+parseInt(data.snot_earp)+parseInt(data.snot_fpain)+parseInt(data.snot_sleep)+parseInt(data.snot_wake)+parseInt(data.snot_bsleep)+parseInt(data.snot_wakeT)+parseInt(data.snot_tired)+parseInt(data.snot_pref)+parseInt(data.snot_konc)+parseInt(data.snot_frust)+parseInt(data.snot_sad)+parseInt(data.snot_trouble)).toString();
+                return before_submit(data, index);
+            }
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID{
+            background-color: aliceblue;
+        }
+
+        #submit_box__ID {
+            text-align: right;
+        }
+
+        /*VmInclude:__HOST__/assets/css/wappsystem-form.css*/
+        /*VmInclude:__HOST__/assets/css/wapp-form.css*/
+    </style>
+</div>
+

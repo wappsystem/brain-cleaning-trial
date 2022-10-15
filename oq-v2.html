@@ -25,21 +25,20 @@
     <body>
         <div id=layout>
             <div id=header></div>
-            <div id=g_nav></div>
             <div id=content></div>
             <div id=footer style='height:20px;background-color:rgba(50,50,50,0.8);'></div>
         </div>
         <!----------------------------------------------->
         <script app code>
             //---------------------------------------------
-            $VmAPI={};$vm.ver=[0.11,0.02]; $vm['jquery-ui-min-js']=1;
+            $VmAPI={};$vm.ver=[0.01,0.02]; $vm['jquery-ui-min-js']=1;
             $vm.flexindex=new FlexSearch({  doc: {id: "id",field: ["title","contents"]}    });
             $vm.hosting_path=window.location.href.substring(0, window.location.href.split('?')[0].lastIndexOf('/'));
             //---------------------------------------------
             $vm.module_list={
-                header:         {url:$vm.hosting_path+"/modules/sites/backend/header.html"},
-                footer:         {url:$vm.hosting_path+"/modules/sites/backend/footer.html"},
-                home:           {url:$vm.hosting_path+"/modules/sites/backend/home.html"},
+                header:         {url:$vm.hosting_path+"/modules/sites/oq/header.html"},
+                footer:         {url:$vm.hosting_path+"/modules/sites/oq/footer.html"},
+                home:           {url:$vm.hosting_path+"/modules/sites/oq/home-v2.html",Table:"participant-osa-clean",router:1},
                 init_and_auth:  {url:$vm.hosting_path+"/modules/system/init-and-auth.html"},
                 vmext:          {url:$vm.hosting_path+"/modules/system/vm-extension.html"},
             }
@@ -51,8 +50,7 @@
             //---------------------------------------------
         </script>    
         <style>
-            #header{ height:120px; }
-            #g_nav{ height:19px; }
+            #header{ height:100px; }
             @media screen and (max-width:576px){ #header{ height:82px; }}
         </style>
         <script vm framework code>
@@ -60,8 +58,7 @@
             //VM framework code, do not need to chang the following code in most cases
             var hearder_height=$('#header').height();
             var footer_height=$('#footer').height();
-            var g_nav_height=$('#g_nav').height();
-            $vm.min_height=$(window).height()-hearder_height-footer_height-g_nav_height+3;
+            $vm.min_height=$(window).height()-hearder_height-2*footer_height+4;
             console.log("w:"+$(window).height()+" - h:"+hearder_height+" - "+"f:"+footer_height+" - mh:"+$vm.min_height)
             $('#content').css('min-height',$vm.min_height);
             $('#content').css('padding-top',hearder_height);
@@ -87,9 +84,8 @@
                 
                 if(m_name!=undefined){ $vm.active_id=$vm.module_list[m_name].id; $vm.active_name=m_name; }
                 if($vm.active_id!='') $('#D'+$vm.active_id).css('min-height',$vm.min_height+"px");
-                if(m_name=='home') {$("#header").css("background","rgba(50,50,50,0.8)"); /*$('#midi_buttons').show();*/ $('#g_nav').hide(); 
-                                    $('#D'+$vm.active_id).css('margin-left','auto').css('margin-right','auto')}
-                else               {$("#header").css("background","rgba(50,50,50,0.8)");  /*$('#midi_buttons').hide();*/ $('#g_nav').show();}
+                if(m_name=='home') {$("#header").css("background","rgba(50,50,50,0.8)"); /*$('#midi_buttons').show(); $('#g_nav').hide();*/ }
+                else               {$("#header").css("background","rgba(50,50,50,0.8)"); /*$('#midi_buttons').hide(); $('#g_nav').show();*/}
             }
             //---------------------------------------------
             document.getElementById('layout').onscroll = function(){

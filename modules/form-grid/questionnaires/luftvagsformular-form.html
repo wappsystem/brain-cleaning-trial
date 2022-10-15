@@ -1,0 +1,607 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3" >
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3 id=title__ID></h3>
+                            <div id="participant_div__ID">
+                                <div class="form-group box">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4 style="font-size:larger">1. Födelseår</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <input type="number" name="pqair_birthyear" class="form-control" placeholder="" required>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">2. Kön</h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_sex" value="0" required>
+                                            <span class="checkmark"></span> Male</label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_sex" value="1">
+                                            <span class="checkmark"></span> Female </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4 style="font-size:larger">3. Längd (cm)?</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <input type="number" max="200" min="0" name="pqair_height" class="form-control" placeholder="cm" required>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4 style="font-size:larger">4.Vikt (kg)?</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <input type="number" max="300" min="0" name="pqair_weight" class="form-control" placeholder="kg" required>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">5. Har du hösnuva eller någon annan allergisk snuva?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_heyfever" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_heyfever" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">6. Har du varit täppt i näsan i mer är 12 veckor under de senaste 12 månaderna?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs1" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs1" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">7. Har du haft värk eller tryck runt pannan, näsan eller ögonbrynen i mer än 12 veckor under de senaste 12 månaderna?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs2" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs2" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">8. Har du haft missfärgat nässekret (snor) eller missfärgat slem i halsen i mer än 12 veckor under de senaste 12 månaderna?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs3" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs3" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">9. Har ditt luktsinne varit nedsatt eller borta i mer än 12 veckor under de senaste 12 månaderna?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs4" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_crs4" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">10. vilken årstid är dina besvär som sämst? 
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_season" value="0" required>
+                                            <span class="checkmark"></span>Vår
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_season" value="1">
+                                            <span class="checkmark"></span>Sommar
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_season" value="2" required>
+                                            <span class="checkmark"></span>Höst
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_season" value="3">
+                                            <span class="checkmark"></span>Vinter
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_season" value="4" required>
+                                            <span class="checkmark"></span>Alltid
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_season" value="5">
+                                            <span class="checkmark"></span>Vet ej
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">11. Har du under de senaste åren besvärats av långvarig hosta?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_cough" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_cough" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">12. Brukar du hosta upp slem eller har du slem i bröstet som du har svårt att få upp när du inte är förkyld?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_mucus" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_mucus" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div id="h_pqair_mucus__ID">
+                                <div class="form-group box">
+                                    <div class="row">
+                                        <div class="col-sm control-group">
+                                            <h4 style="font-size:larger">12a. Får du upp slem på det viset nästan varje dag under åtminstone tre månader varje år?
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <label class="radiobuttons">
+                                                <input type="radio" name="pqair_mucus_3m" value="0" required>
+                                                <span class="checkmark"></span>Nej
+                                            </label>
+                                            <label class="radiobuttons">
+                                                <input type="radio" name="pqair_mucus_3m" value="1">
+                                                <span class="checkmark"></span>Ja
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group box">
+                                    <div class="row">
+                                        <div class="col-sm control-group">
+                                            <h4 style="font-size:larger">12b. Har du haft sådana perioder under minst två år i följd
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <label class="radiobuttons">
+                                                <input type="radio" name="paqir_mucus_2y" value="0" required>
+                                                <span class="checkmark"></span>Nej
+                                            </label>
+                                            <label class="radiobuttons">
+                                                <input type="radio" name="paqir_mucus_2y" value="1">
+                                                <span class="checkmark"></span>Ja
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">12c. Hur gammal var du när dessa besvär började?</h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <input type="number" name="pqair_mucus_yold" class="form-control" placeholder="" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">13. Har Du någonsin haft pip eller väsningar i bröstet?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_pip" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_pip" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div id="h_pqair_pip__ID">
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">13a. Hur gammal var du när dessa besvär började?</h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <input type="number" name="pqair_pip_first" class="form-control" placeholder="" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">13b. Vilket år hade du senast pip och väs i bröstet?</h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <input type="number" name="pqair_pip_year_last" class="form-control" placeholder="" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">14. Är Du rökare <i>(gäller även om Du röker enstaka cigaretter/cigarrer
+                                            eller pipstopp per vecka)</i>?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">15. Är Du f.d. rökare?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo_ex" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo_ex" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div id="h_pqair_smo__ID">
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">15a. Hur mycket röker/rökte Du? <i>(ange ett ungefärligt medelvärde)</i></h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <label>Cigaretter/dag</label>
+                                            <input type="number" name="pqair_smo_cigg" class="form-control" placeholder="Cigaretter/dag" required>
+                                        </fieldset>
+                                        <fieldset class="pl-4">
+                                            <label>Cigarrer/vecka</label>
+                                            <input type="number" name="pqair_smo_ciga" class="form-control" placeholder="Cigarrer/vecka" required>
+                                        </fieldset>
+                                        <fieldset class="pl-4">
+                                            <label>pkt. Piptobak/vecka</label>
+                                            <input type="number" name="pqair_smo_pipe" class="form-control" placeholder="pkt. Piptobak/vecka" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">15b. Hur gammal var Du när Du började röka?</h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <label></label>
+                                            <input type="number" name="pqair_smo_start" class="form-control" placeholder="" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">15c. Hur länge har Du rökt? <i>(gäller både rökare och före detta rökare)</i></h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <input type="number" name="pqair_smo_years" class="form-control" placeholder="" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group box">
+                                    <h4 style="font-size:larger">15d. Om Du är en före detta rökare, när slutade Du röka?</h4>
+                                    <div class="questiongroup">
+                                        <fieldset class="pl-4">
+                                            <input type="number" name="pqair_smo_end" class="form-control" placeholder="" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">16. Röker du eller har du rökt e-cigaretter?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo_e_cig" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo_e_cig" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <div class="row">
+                                    <div class="col-sm control-group">
+                                        <h4 style="font-size:larger">17. Röker du eller har du rökt vattenpipa?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="pl-4">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo_wpipe" value="0" required>
+                                            <span class="checkmark"></span>Nej
+                                        </label>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="pqair_smo_wpipe" value="1">
+                                            <span class="checkmark"></span>Ja
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="box" style="text-align:right">
+                                <div class="box-item">
+                                    <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                            <input type="radio" name="_status" value="#00FF00" checked style="display:none">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            /*VmInclude: '__COMPONENT__/f/form.01.js'*/
+             /*VmInclude:__HOST__/assets/js/shared-form.js*/
+            //---------------------------------------
+            var load2 = m.load;
+            m.load = function () {
+                load2();
+                if ($('[type="date"]').prop('type') != 'date') {
+                    $('[type="date"]').datepicker();
+                }
+                //--------------
+                if($('#D__ID input[name=pqair_mucus]:checked').val()=='1'){
+                    $('#h_pqair_mucus__ID').show()
+                    $('#D__ID input[name=pqair_mucus_3m]').prop('required',true);
+                    $('#D__ID input[name=paqir_mucus_2y]').prop('required',true);
+                    $('#D__ID input[name=pqair_mucus_yold]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_mucus__ID').hide();
+                    $('#D__ID input[name=pqair_mucus_3m]').prop('required',false);
+                    $('#D__ID input[name=paqir_mucus_2y]').prop('required',false);
+                    $('#D__ID input[name=pqair_mucus_yold]').prop('required',false);
+                }
+                //--------------
+                if($('#D__ID input[name=pqair_pip]:checked').val()=='1'){
+                    $('#h_pqair_pip__ID').show()
+                    $('#D__ID input[name=pqair_pip_first]').prop('required',true);
+                    $('#D__ID input[name=pqair_pip_year_last]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_pip__ID').hide();
+                    $('#D__ID input[name=pqair_pip_first]').prop('required',false);
+                    $('#D__ID input[name=pqair_pip_year_last]').prop('required',false);
+                }
+                //--------------
+                if($('#D__ID input[name=pqair_smo]:checked').val()=='1' || $('#D__ID input[name=pqair_smo_ex]:checked').val()=='1'){
+                    $('#h_pqair_smo__ID').show()
+                    $('#D__ID input[name=pqair_smo_cigg]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_ciga]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_pipe]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_start]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_years]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_end]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_smo__ID').hide();
+                    $('#D__ID input[name=pqair_smo_cigg]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_ciga]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_pipe]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_start]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_years]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_end]').prop('required',false);
+                }
+                //--------------
+            }
+            //------------------------------------
+            $('#D__ID input[name=pqair_mucus]').on('change',function(){
+                if($('#D__ID input[name=pqair_mucus]:checked').val()=='1'){
+                    $('#h_pqair_mucus__ID').show()
+                    $('#D__ID input[name=pqair_mucus_3m]').prop('required',true);
+                    $('#D__ID input[name=paqir_mucus_2y]').prop('required',true);
+                    $('#D__ID input[name=pqair_mucus_yold]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_mucus__ID').hide();
+                    $('#D__ID input[name=pqair_mucus_3m]').prop('required',false);
+                    $('#D__ID input[name=paqir_mucus_2y]').prop('required',false);
+                    $('#D__ID input[name=pqair_mucus_yold]').prop('required',false);
+                }
+            })
+            //------------------------------------
+            $('#D__ID input[name=pqair_pip]').on('change',function(){
+                if($('#D__ID input[name=pqair_pip]:checked').val()=='1'){
+                    $('#h_pqair_pip__ID').show()
+                    $('#D__ID input[name=pqair_pip_first]').prop('required',true);
+                    $('#D__ID input[name=pqair_pip_year_last]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_pip__ID').hide();
+                    $('#D__ID input[name=pqair_pip_first]').prop('required',false);
+                    $('#D__ID input[name=pqair_pip_year_last]').prop('required',false);
+                }
+            })
+            //------------------------------------
+            $('#D__ID input[name=pqair_smo]').on('change',function(){
+                if($('#D__ID input[name=pqair_smo]:checked').val()=='1' || $('#D__ID input[name=pqair_smo_ex]:checked').val()=='1'){
+                    $('#h_pqair_smo__ID').show()
+                    $('#D__ID input[name=pqair_smo_cigg]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_ciga]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_pipe]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_start]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_years]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_end]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_smo__ID').hide();
+                    $('#D__ID input[name=pqair_smo_cigg]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_ciga]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_pipe]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_start]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_years]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_end]').prop('required',false);
+                }
+            })
+            //------------------------------------
+            $('#D__ID input[name=pqair_smo_ex]').on('change',function(){
+                if($('#D__ID input[name=pqair_smo]:checked').val()=='1' || $('#D__ID input[name=pqair_smo_ex]:checked').val()=='1'){
+                    $('#h_pqair_smo__ID').show()
+                    $('#D__ID input[name=pqair_smo_cigg]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_ciga]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_pipe]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_start]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_years]').prop('required',true);
+                    $('#D__ID input[name=pqair_smo_end]').prop('required',true);
+                }
+                else {
+                    $('#h_pqair_smo__ID').hide();
+                    $('#D__ID input[name=pqair_smo_cigg]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_ciga]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_pipe]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_start]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_years]').prop('required',false);
+                    $('#D__ID input[name=pqair_smo_end]').prop('required',false);
+                }
+            })
+            //------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID{
+            background-color: aliceblue;
+        }
+
+        #submit_box__ID {
+            text-align: right;
+        }
+        /*VmInclude:__HOST__/assets/css/wapp-form.css*/
+        /*VmInclude:__HOST__/assets/css/wappsystem-form.css*/
+    </style>
+</div>

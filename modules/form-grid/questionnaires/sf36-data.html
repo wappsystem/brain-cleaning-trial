@@ -1,0 +1,19 @@
+<section>
+    VmInclude:__COMPONENT__/g/grid.01.html
+  </section>
+  <script>
+    function F__ID(){
+        //-------------------------------------
+            /*VmInclude:__HOST__/assets/js/grid.01.js*/
+            /*VmInclude:__HOST__/assets/js/shared-data.js*/
+        //-------------------------------------
+        $('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
+        //-------------------------------------
+      var fields="SF36_PF,SF36_PRF,SF36_BP,SF36_GHP,SF36_VI,SF36_SRF,SF36_ERF,SF36_MH,SF36_PH,SF36_MHM,SF36_1,SF36_2,,SF36_3a,SF36_3b,SF36_3c,SF36_3d,SF36_3e,SF36_3f,SF36_3g,SF36_3h,SF36_3i,SF36_3j,SF36_4a,SF36_4b,SF36_4c,SF36_4d,,SF36_5a,SF36_5b,SF36_5c,SF36_6,SF36_7,SF36_8,,SF36_9a,SF36_9b,SF36_9c,SF36_9d,SF36_9e,SF36_9f,SF36_9g,SF36_9h,SF36_9i,SF36_10,SF36_11a,SF36_11b,SF36_11c,SF36_11d";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+  }
+</script>
+<style>
+  /*VmInclude:__COMPONENT__/g/grid.01.css*/
+</style>

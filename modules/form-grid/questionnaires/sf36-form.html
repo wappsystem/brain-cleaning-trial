@@ -1,0 +1,814 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3 id=title__ID></h3>
+                            <div id="participant_div__ID">
+                                <div class="form-group box">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h2 id="title__ID"></h2>
+                                <h4>INSTRUKTIONER: Detta formulär innehåller frågor om hur Du ser på Din hälsa.<br>
+                                    Informationen skall hjälpa till att följa hur Du mår och fungerar i Ditt dagliga
+                                    liv.
+                                    <br><br>Besvara frågorna genom att klick på den siffra Du tycker stämmer bäst in på
+                                    Dig. Om Du är osäker, klicka ändå på den som känns riktigast.
+                                </h4>
+                            </div>
+                            <div class="form-group box">
+                                <h4>1. I allmänhet, skulle du vilja säga att din hälsa är:</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_1" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Utmärkt</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_1" value="2">
+                                            <span class="checkmark no-dot">2</span> Mycket god</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_1" value="3">
+                                            <span class="checkmark no-dot">3</span> god</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_1" value="4">
+                                            <span class="checkmark no-dot">4</span> någorlunda</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_1" value="5">
+                                            <span class="checkmark no-dot">5</span> dålig</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4><u>2. Jämfört med för ett år sedan.</u> Hur skulle du vilja bedöma ditt allmänna
+                                    hälsotillstånd <u>nu</u>?</h4>
+                                <div class="questiongroup">
+                                    <fieldset>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_2" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Mycket bättre än för ett år
+                                            sedan</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_2" value="2">
+                                            <span class="checkmark no-dot">2</span> Något bättre nu än för ett år
+                                            sedan</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_2" value="3">
+                                            <span class="checkmark no-dot">3</span> Ungefär det samma</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_2" value="4">
+                                            <span class="checkmark no-dot">4</span> Något sämre nu är för ett år
+                                            sedan</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_2" value="5">
+                                            <span class="checkmark no-dot">5</span> Mycket sämre nu än för ett år
+                                            sedan</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>3. De följande frågorna handlar om aktiviteter som Du kan tänkas utföra under en
+                                    vanlig dag. Är <u>Du på grund av ditt hälsotillstånd begränsad</u> i dessa
+                                    aktiviteter <u>nu</u>? Om så är fallet, hur mycket?</h4>
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <legend>a. <span style="font-weight:bold">Ansträngande aktiviteter</span>, som
+                                            att springa, lyfta tunga saker, delta i ansträngade sporter</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3a" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3a" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3a" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>b. <span style="font-weight:bold">Måttligt ansträngande
+                                                aktiviteter</span>, som att flytta ett bord, dammsuga, skogspromenader
+                                            eller trädgårdsarbete</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3b" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3b" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3b" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>c. Lyfta eller bära matkassar</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3c" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3c" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3c" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>d. Gå uppför <span style="font-weight:bold">flera</span> trappor
+                                        </legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3d" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3d" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3d" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>e.Gå uppför <span style="font-weight:bold">en</span> trappa</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3e" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3e" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3e" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>f. Böja dig eller gå ner på knä</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3f" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3f" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3f" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>g. Gå <span style="font-weight:bold">mer än två kilometer</span>
+                                        </legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3g" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3g" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3g" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>h. Gå <span style="font-weight:bold">några hundra meter</span></legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3h" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3h" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3h" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>i. Gå <span style="font-weight:bold">hundra meter</span></legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3i" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3i" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3i" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>j. Bada eller klä på dig</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3j" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja, mycket begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3j" value="2">
+                                            <span class="checkmark no-dot">2</span> Ja, lite begränsad</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_3j" value="3">
+                                            <span class="checkmark no-dot">3</span> Nej, inte alls begränsad</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>4. Under de <u>senaste fyra veckorna</u>, har Du haft något av följande problem i
+                                    Ditt arbete eller med andra regelbundna dagliga aktiviteter <u>som en följd av Ditt
+                                        kroppsliga hälsotillstånd</u>?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <legend>a. Skurit ner den <span style="font-weight:bold">tid</span> du normalt
+                                            ägnat åt arbete eller andra aktiviteter</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4a" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4a" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>b. <span style="font-weight:bold">Uträttat</span> mindre än du skulle
+                                            önskat</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4b" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4b" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>c. Varit hindrad att utföra <span style="font-weight:bold">vissa</span>
+                                            arbetsuppgifter eller andra aktiviteter</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4c" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4c" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>d. Haft <span style="font-weight:bold">svårigheter</span> att utföra
+                                            ditt arbete eller andra aktiviteter (t.ex. genom att det krävde extra
+                                            ansträngning)</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4d" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_4d" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>5. Under de <u>senaste fyra veckorna</u> har Du haft något av följande problem i
+                                    Ditt arbete eller med andra regelbundna dagliga aktiviteter som en följd av
+                                    <u>känslomässiga problem</u> (som t.ex. nedstämdhet eller änglan)?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <legend>a. Skrurit ned den <span style="font-weight:bold">tid</span> du ägnat åt
+                                            arbete eller andra aktiviteter</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_5a" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_5a" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>b. <span style="font-weight:bold">Uträttat mindre</span> än du skulle
+                                            önskat</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_5b" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_5b" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                    <fieldset class="subquestions">
+                                        <legend>c. Inte utfört arbete eller andra aktiviteter så <span
+                                                style="font-weight:bold">noggrant</span> som vanligt</legend>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_5c" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ja</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_5c" value="2">
+                                            <span class="checkmark no-dot">2</span> Nej</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>6. Under de <u>senaste fyra veckorna</u>, i vilken utsträckning har Ditt kroppsliga
+                                    hälsotillstång eller Dina känslomässiga problem stört Ditt vanliga umgänge med
+                                    anhöring, vänner, grannar eller andra?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_6" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Inte alls</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_6" value="2">
+                                            <span class="checkmark no-dot">2</span> Lite</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_6" value="3">
+                                            <span class="checkmark no-dot">3</span> Måttlig</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_6" value="4">
+                                            <span class="checkmark no-dot">4</span> Mycket</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_6" value="5">
+                                            <span class="checkmark no-dot">5</span> Väldigt mycket</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>7. Hur mycket <u>värk eller smärta</u> har Du haft under de <u>senaste fyra
+                                        veckorna</u>?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_7" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Ingen</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_7" value="2">
+                                            <span class="checkmark no-dot">2</span> Mycket lätt</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_7" value="3">
+                                            <span class="checkmark no-dot">3</span> Lätt</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_7" value="4">
+                                            <span class="checkmark no-dot">4</span> Måttlig</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_7" value="5">
+                                            <span class="checkmark no-dot">5</span> Svår</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_7" value="6">
+                                            <span class="checkmark no-dot">6</span> Mycket svår</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>8. Under de <u>senaste fyra veckorna</u>, hur mycket har <u>värken eller smärtan</u>
+                                    stört Ditt normala arbete (innefattar både arbete utanför hemmet och
+                                    hushållssysslor)?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_8" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Inte alls</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_8" value="2">
+                                            <span class="checkmark no-dot">2</span> Lite</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_8" value="3">
+                                            <span class="checkmark no-dot">3</span> Måttlig</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_8" value="4">
+                                            <span class="checkmark no-dot">4</span> Mycket</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_8" value="5">
+                                            <span class="checkmark no-dot">5</span> Väldigt mycket</label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>9. Frågorna här handlar om hur Du känner dig och hur du haft det under de
+                                    <u>senaste fyra veckorna</u>. Ange för varje fråga det svarsalternativ som bäst
+                                    beskriver hur Du känt dig.
+                                    <br>Hur stor del av tiden under de <u>fyra senaste veckorna</u>...
+                                </h4>
+                                <div class="questiongroup">
+                                    <fieldset class="">
+                                        <span>a. Har Du känt Dig riktigt pigg och stark?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9a" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9a" value="2">
+                                            <span class="checkmark no-dot">2</span> Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9a" value="3">
+                                            <span class="checkmark no-dot">3</span> En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9a" value="4">
+                                            <span class="checkmark no-dot">4</span> En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9a" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9a" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>b. Har Du känt Dig mycket nervös?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9b" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9b" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9b" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9b" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9b" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9b" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>c. Har du känt Dig så nedstämd att ingenting kunnat muntra upp dig?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9c" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9c" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9c" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9c" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9c" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9c" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>d. Har Du känt Dig lugn och harmonisk?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9d" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9d" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9d" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9d" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9d" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9d" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>e. har du varit full av energi?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9e" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9e" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9e" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9e" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9e" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9e" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>f. Har Du känt Dig dyster och ledsen?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9f" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9f" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9f" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9f" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9f" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9f" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>g. Har Du känt Dig utsliten?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9g" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9g" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9g" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9g" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9g" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9g" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>h. Har Du känt Dig glad och lycklig?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9h" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9h" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9h" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9h" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9h" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9h" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>i. Har Du känt Dig trött?</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9i" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9i" value="2">
+                                            <span class="checkmark no-dot">2</span>Största delen av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9i" value="3">
+                                            <span class="checkmark no-dot">3</span>En hel del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9i" value="4">
+                                            <span class="checkmark no-dot">4</span>En del av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9i" value="5">
+                                            <span class="checkmark no-dot">5</span>Lite av tiden</label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_9i" value="6">
+                                            <span class="checkmark no-dot">6</span>Inget av tiden</label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>10. Under de <u>senaste fyra veckorna</u>, hur stor del av tiden har <u>Ditt
+                                        kroppsliga hälsotillstånd eller eller Dina känslomässig problem</u> stört dina
+                                    möjligheter att umgås (t.ex. hälsa på släkt, vänner, etc.)?
+                                </h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_10" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Hela tiden</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_10" value="2">
+                                            <span class="checkmark no-dot">2</span> Största delen av tiden</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_10" value="3">
+                                            <span class="checkmark no-dot">3</span> En del av tiden</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_10" value="4">
+                                            <span class="checkmark no-dot">4</span> Lite av tiden</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="SF36_10" value="5">
+                                            <span class="checkmark no-dot">5</span> Inget av tiden
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4> 11. Välj det svarsalternativ som bäst beskriver hur mycket <u>vart och ett</u>
+                                    av följande påstående STÄMMER eller INTE STÄMMER in på Dig
+                                </h4>
+                                <div class="questiongroup">
+                                    <fieldset class="">
+                                        <span>a. Jag verkar ha lite lättare att bli sjuk än andra människor</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11a" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Stämmer precis
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11a" value="2">
+                                            <span class="checkmark no-dot">2</span> Stämmer ganska bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11a" value="3">
+                                            <span class="checkmark no-dot">3</span> Osäker
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11a" value="4">
+                                            <span class="checkmark no-dot">4</span> Stämmer inte särskilt bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11a" value="5">
+                                            <span class="checkmark no-dot">5</span> Stämmer inte alls
+                                        </label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>b. Jag är lika frisk som vem som helst av dem jag känner</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11b" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Stämmer precis
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11b" value="2">
+                                            <span class="checkmark no-dot">2</span> Stämmer ganska bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11b" value="3">
+                                            <span class="checkmark no-dot">3</span> Osäker
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11b" value="4">
+                                            <span class="checkmark no-dot">4</span> Stämmer inte särskilt bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11b" value="5">
+                                            <span class="checkmark no-dot">5</span> Stämmer inte alls
+                                        </label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>c. Jag tror min hälsa kommer att bli sämre</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11c" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Stämmer precis
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11c" value="2">
+                                            <span class="checkmark no-dot">2</span> Stämmer ganska bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11c" value="3">
+                                            <span class="checkmark no-dot">3</span> Osäker
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11c" value="4">
+                                            <span class="checkmark no-dot">4</span> Stämmer inte särskilt bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11c" value="5">
+                                            <span class="checkmark no-dot">5</span> Stämmer inte alls
+                                        </label>
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <span>d. Min hälsa är utmärkt</span><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11d" value="1" required>
+                                            <span class="checkmark no-dot">1</span> Stämmer precis
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11d" value="2">
+                                            <span class="checkmark no-dot">2</span> Stämmer ganska bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11d" value="3">
+                                            <span class="checkmark no-dot">3</span> Osäker
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11d" value="4">
+                                            <span class="checkmark no-dot">4</span> Stämmer inte särskilt bra
+                                        </label><br>
+                                        <label class="radiobuttons" title="">
+                                            <input type="radio" name="SF36_11d" value="5">
+                                            <span class="checkmark no-dot">5</span> Stämmer inte alls
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="box" style="text-align:right">
+                                <div class="box-item">
+                                    <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            /*VmInclude:__COMPONENT__/f/form.01.js*/
+            /*VmInclude:__HOST__/assets/js/shared-form.js*/
+            //-------------------------------------
+            var before_submit = m.before_submit;
+            m.before_submit = function (data, index) {
+                data.SF36_PF = ((((parseFloat(data.SF36_3a) + parseFloat(data.SF36_3b) + parseFloat(data.SF36_3c) + parseFloat(data.SF36_3d) + parseFloat(data.SF36_3e) + parseFloat(data.SF36_3f) + parseFloat(data.SF36_3g) + parseFloat(data.SF36_3h) + parseFloat(data.SF36_3i) + parseFloat(data.SF36_3j)) - 10) / 20) * 100).toFixed(0);
+                data.SF36_PRF = ((((parseFloat(data.SF36_4a) + parseFloat(data.SF36_4b) + parseFloat(data.SF36_4c) + parseFloat(data.SF36_4d)) - 4) / 4) * 100).toFixed(0);
+                var bp = 0;
+                if (parseFloat(data.SF36_7) == 1) bp = 6.0;
+                if (parseFloat(data.SF36_7) == 2) bp = 5.4;
+                if (parseFloat(data.SF36_7) == 3) bp = 4.2;
+                if (parseFloat(data.SF36_7) == 4) bp = 3.1;
+                if (parseFloat(data.SF36_7) == 5) bp = 2.2;
+                if (parseFloat(data.SF36_7) == 6) bp = 1.0;
+                if (parseFloat(data.SF36_8) == 1 & parseFloat(data.SF36_7) == 1) bp += 6.0;
+                if (parseFloat(data.SF36_8) == 1 & parseFloat(data.SF36_7) != 1) bp += 5.0;
+                if (parseFloat(data.SF36_8) == 2) bp += 4;
+                if (parseFloat(data.SF36_8) == 3) bp += 3;
+                if (parseFloat(data.SF36_8) == 4) bp += 2;
+                if (parseFloat(data.SF36_8) == 5) bp += 1;
+                bp = ((bp - 2) / 10) * 100;
+                data.SF36_BP = bp.toFixed(0);
+                var gh = 0;
+                if (parseFloat(data.SF36_1) == 1) gh = 5.0;
+                if (parseFloat(data.SF36_1) == 2) gh = 4.4;
+                if (parseFloat(data.SF36_1) == 3) gh = 3.4;
+                if (parseFloat(data.SF36_1) == 4) gh = 2.0;
+                if (parseFloat(data.SF36_1) == 5) gh = 1.0;
+                gh += parseFloat(data.SF36_11a) + parseFloat(data.SF36_11c);
+                if (parseFloat(data.SF36_11b) == 1) gh += 5.0;
+                if (parseFloat(data.SF36_11b) == 2) gh += 4.0;
+                if (parseFloat(data.SF36_11b) == 3) gh += 3.0;
+                if (parseFloat(data.SF36_11b) == 4) gh += 2.0;
+                if (parseFloat(data.SF36_11b) == 5) gh += 1.0;
+                if (parseFloat(data.SF36_11d) == 1) gh += 5.0;
+                if (parseFloat(data.SF36_11d) == 2) gh += 4.0;
+                if (parseFloat(data.SF36_11d) == 3) gh += 3.0;
+                if (parseFloat(data.SF36_11d) == 4) gh += 2.0;
+                if (parseFloat(data.SF36_11d) == 5) gh += 1.0;
+                gh = ((gh - 5) / 20) * 100;
+                data.SF36_GHP = gh.toFixed(0);
+                var VI = 0;
+                if (parseFloat(data.SF36_9a) == 1) VI = 6.0;
+                if (parseFloat(data.SF36_9a) == 2) VI = 5.0;
+                if (parseFloat(data.SF36_9a) == 3) VI = 4.0;
+                if (parseFloat(data.SF36_9a) == 4) VI = 3.0;
+                if (parseFloat(data.SF36_9a) == 5) VI = 2.0;
+                if (parseFloat(data.SF36_9a) == 6) VI = 1.0;
+                if (parseFloat(data.SF36_9e) == 1) VI += 6.0;
+                if (parseFloat(data.SF36_9e) == 2) VI += 5.0;
+                if (parseFloat(data.SF36_9e) == 3) VI += 4.0;
+                if (parseFloat(data.SF36_9e) == 4) VI += 3.0;
+                if (parseFloat(data.SF36_9e) == 5) VI += 2.0;
+                if (parseFloat(data.SF36_9e) == 6) VI += 1.0;
+                VI += parseFloat(data.SF36_9g) + parseFloat(data.SF36_9i);
+                VI = ((VI - 4) / 20) * 100;
+                data.SF36_VI = VI.toFixed(0);
+                var SF = 0;
+                if (parseFloat(data.SF36_6) == 1) SF = 5.0;
+                if (parseFloat(data.SF36_6) == 2) SF = 4.0;
+                if (parseFloat(data.SF36_6) == 3) SF = 3.0;
+                if (parseFloat(data.SF36_6) == 4) SF = 2.0;
+                if (parseFloat(data.SF36_6) == 5) SF = 1.0;
+                SF = SF + parseFloat(data.SF36_10);
+                SF = ((SF - 2) / 8) * 100;
+                data.SF36_SRF = SF.toFixed(0);
+                data.SF36_ERF = ((((parseFloat(data.SF36_5a) + parseFloat(data.SF36_5b) + parseFloat(data.SF36_5c)) - 3) / 3) * 100).toFixed(0);
+                var MH = 0;
+                if (parseFloat(data.SF36_9d) == 1) MH = 6.0;
+                if (parseFloat(data.SF36_9d) == 2) MH = 5.0;
+                if (parseFloat(data.SF36_9d) == 3) MH = 4.0;
+                if (parseFloat(data.SF36_9d) == 4) MH = 3.0;
+                if (parseFloat(data.SF36_9d) == 5) MH = 2.0;
+                if (parseFloat(data.SF36_9d) == 6) MH = 1.0;
+                if (parseFloat(data.SF36_9h) == 1) MH += 6.0;
+                if (parseFloat(data.SF36_9h) == 2) MH += 5.0;
+                if (parseFloat(data.SF36_9h) == 3) MH += 4.0;
+                if (parseFloat(data.SF36_9h) == 4) MH += 3.0;
+                if (parseFloat(data.SF36_9h) == 5) MH += 2.0;
+                if (parseFloat(data.SF36_9h) == 6) MH += 1.0;
+                MH += parseFloat(data.SF36_9b) + parseFloat(data.SF36_9c) + parseFloat(data.SF36_9f);
+                MH = ((MH - 5) / 25) * 100;
+                data.SF36_MH = MH.toFixed(0);
+                data.SF36_PH = ((parseFloat(data.SF36_PF) + parseFloat(data.SF36_PRF) + parseFloat(data.SF36_BP) + parseFloat(data.SF36_GHP) + parseFloat(data.SF36_VI)) / 5).toFixed(0);
+                data.SF36_MHM = ((parseFloat(data.SF36_SRF) + parseFloat(data.SF36_ERF) + parseFloat(data.SF36_MH)) / 3).toFixed(0);
+
+                before_submit(data, index);
+            }
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID{
+            background-color: aliceblue;
+        }
+
+        #submit_box__ID {
+            text-align: right;
+        }
+
+        /*VmInclude:__HOST__/assets/css/wapp-form.css*/
+        /*VmInclude:__HOST__/assets/css/wappsystem-form.css*/
+    </style>
+</div>

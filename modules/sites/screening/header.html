@@ -1,0 +1,26 @@
+<div id=D__ID>
+    <div>
+        <header class="header header-dark" style="background-image: url(assets/images/bg-08.png)">
+          <div class="container">
+            <div class="header-inner">
+              <div class="logo">
+                <a href="#">
+                  <img src="assets/images/logo.png" alt="SleepFix">
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+    </div>
+    <script>
+        //------------------------------------
+        $('#vm-mobile_title').on('click',function(){ $vm.load_module('home',$vm.root_layout_content_slot,{}) })
+        $('.vm-desk-logo').on('click',function(){ $vm.load_module('home',$vm.root_layout_content_slot,{}) })
+        //------------------------------------
+        $vm.header_ready=1;
+        //------------------------------------
+    </script>
+    <style>
+        /*VmInclude:__HOST__/assets/css/landing.css*/
+    </style>
+</div>

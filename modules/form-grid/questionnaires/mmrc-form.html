@@ -1,0 +1,83 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3" >
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3 id=title__ID></h3>
+                            <div id="participant_div__ID">
+                                <div class="form-group box">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group box">
+                                <h4>Välj det alternativ som stämmer överens med din situation:</h4>
+                                <div class="questiongroup">
+                                    <fieldset>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmrc" value="0" required>
+                                            <span class="checkmark no-dot">0</span> Jag blir anfådd när jag anstränger mig rejält, inte när jag tar en snabb promenad eller går i en uppförsbacke.
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmrc" value="1">
+                                            <span class="checkmark no-dot">1</span> Jag blir anfådd när jag tar en snabb promenad eller går i en uppförsbacke.
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmrc" value="2">
+                                            <span class="checkmark no-dot">2</span> Jag blir anfådd när jag när jag går på slät mark i samma takt som någon in min ålder.
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmrc" value="3">
+                                            <span class="checkmark no-dot">3</span> Jag blir anfådd när jag när jag går på slät mark att jag måste stanna upp trots att jag själv bestämmer takten 
+                                        </label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="mmrc" value="4">
+                                            <span class="checkmark no-dot">4</span> Jag blir anfådd när jag tvättar och klär mej.
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="box" style="text-align:right">
+                                <div class="box-item">
+                                    <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            /*VmInclude: __COMPONENT__/f/form.01.js*/
+            /*VmInclude:__HOST__/assets/js/shared-form.js*/
+        }
+    </script>
+    <style>
+        #D__ID{
+            background-color: aliceblue;
+        }
+
+        #submit_box__ID {
+            text-align: right;
+        }
+
+        /*VmInclude:__HOST__/assets/css/wappsystem-form.css*/
+        /*VmInclude:__HOST__/assets/css/wapp-form.css*/
+    </style>
+</div>
