@@ -145,6 +145,10 @@ padding:10px
     grid-template-columns: auto auto auto;
   }
 
+  #D__ID .grid-container-3-fixed {
+    display: grid;
+    grid-template-columns: 400px 150px 150px;
+  }
   #D__ID .grid-container-3-special {
     display: grid;
     grid-template-columns: 120px 500px 120px;
@@ -288,6 +292,10 @@ padding:10px
     }
 
     #D__ID .grid-container-3 {
+      grid-template-columns: auto;
+      text-align: center;
+    }
+    #D__ID .grid-container-3-fixed {
       grid-template-columns: auto;
       text-align: center;
     }
