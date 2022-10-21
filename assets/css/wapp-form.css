@@ -157,6 +157,10 @@ padding:10px
     display: grid;
     grid-template-columns: auto auto;
   }
+  #D__ID .grid-container-2-75-25 {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
   #D__ID .grid-container-1 {
     display: grid;
     grid-template-columns: auto;
@@ -309,10 +313,12 @@ padding:10px
     #D__ID .textright{
       text-align: center;
     }
+    #D__ID .grid-container-2-75-25,
     #D__ID .grid-container-2 {
       grid-template-columns: auto;
-      text-align: center;
+      text-align: -webkit-center;
     }
+
   }
 
   /* Slider */
