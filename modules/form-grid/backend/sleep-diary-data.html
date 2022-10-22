@@ -1,0 +1,199 @@
+<section>
+  VmInclude:__HOST__/assets/html/grid.01.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__HOST__/assets/js/grid.01.multiple.js
+      VmInclude:__HOST__/assets/js/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
+    //-------------------------------------
+    var fields="sd_date,sd_day,sd_type";
+    fields+=",sd_coffee_12,sd_medication_12,sd_alcohol_12,sd_excercise_12,sd_go_to_bed_12,sd_sleep_12";
+    fields+=",sd_coffee_13,sd_medication_13,sd_alcohol_13,sd_excercise_13,sd_go_to_bed_13,sd_sleep_13";
+    fields+=",sd_coffee_14,sd_medication_14,sd_alcohol_14,sd_excercise_14,sd_go_to_bed_14,sd_sleep_14";
+    fields+=",sd_coffee_15,sd_medication_15,sd_alcohol_15,sd_excercise_15,sd_go_to_bed_15,sd_sleep_15";
+    fields+=",sd_coffee_16,sd_medication_16,sd_alcohol_16,sd_excercise_16,sd_go_to_bed_16,sd_sleep_16";
+    fields+=",sd_coffee_17,sd_medication_17,sd_alcohol_17,sd_excercise_17,sd_go_to_bed_17,sd_sleep_17";
+    fields+=",sd_coffee_18,sd_medication_18,sd_alcohol_18,sd_excercise_18,sd_go_to_bed_18,sd_sleep_18";
+    fields+=",sd_coffee_19,sd_medication_19,sd_alcohol_19,sd_excercise_19,sd_go_to_bed_19,sd_sleep_19";
+    fields+=",sd_coffee_20,sd_medication_20,sd_alcohol_20,sd_excercise_20,sd_go_to_bed_20,sd_sleep_20";
+    fields+=",sd_coffee_21,sd_medication_21,sd_alcohol_21,sd_excercise_21,sd_go_to_bed_21,sd_sleep_21";
+    fields+=",sd_coffee_22,sd_medication_22,sd_alcohol_22,sd_excercise_22,sd_go_to_bed_22,sd_sleep_22";
+    fields+=",sd_coffee_23,sd_medication_23,sd_alcohol_23,sd_excercise_23,sd_go_to_bed_23,sd_sleep_23";
+    fields+=",sd_coffee_00,sd_medication_00,sd_alcohol_00,sd_excercise_00,sd_go_to_bed_00,sd_sleep_00";
+    fields+=",sd_coffee_01,sd_medication_01,sd_alcohol_01,sd_excercise_01,sd_go_to_bed_01,sd_sleep_01";
+    fields+=",sd_coffee_02,sd_medication_02,sd_alcohol_02,sd_excercise_02,sd_go_to_bed_02,sd_sleep_02";
+    fields+=",sd_coffee_03,sd_medication_03,sd_alcohol_03,sd_excercise_03,sd_go_to_bed_03,sd_sleep_03";
+    fields+=",sd_coffee_04,sd_medication_04,sd_alcohol_04,sd_excercise_04,sd_go_to_bed_04,sd_sleep_04";
+    fields+=",sd_coffee_05,sd_medication_05,sd_alcohol_05,sd_excercise_05,sd_go_to_bed_05,sd_sleep_05";
+    fields+=",sd_coffee_06,sd_medication_06,sd_alcohol_06,sd_excercise_06,sd_go_to_bed_06,sd_sleep_06";
+    fields+=",sd_coffee_07,sd_medication_07,sd_alcohol_07,sd_excercise_07,sd_go_to_bed_07,sd_sleep_07";
+    fields+=",sd_coffee_08,sd_medication_08,sd_alcohol_08,sd_excercise_08,sd_go_to_bed_08,sd_sleep_08";
+    fields+=",sd_coffee_09,sd_medication_09,sd_alcohol_09,sd_excercise_09,sd_go_to_bed_09,sd_sleep_09";
+    fields+=",sd_coffee_10,sd_medication_10,sd_alcohol_10,sd_excercise_10,sd_go_to_bed_10,sd_sleep_10";
+    fields+=",sd_coffee_11,sd_medication_11,sd_alcohol_11,sd_excercise_11,sd_go_to_bed_11,sd_sleep_11";
+    m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Modify_Reason,Update_date,Updated_by,Submit_date,Submitted_by,_Delete"
+      //-------------------------------------
+      var cell_render = m.cell_render;
+      m.cell_render=function(records,I,field,td){
+        switch(field){
+          case 'sd_coffee_12':
+          case 'sd_medication_12':
+          case 'sd_alcohol_12':
+          case 'sd_excercise_12':
+          case 'sd_go_to_bed_12':
+          case 'sd_sleep_12':
+          case 'sd_coffee_13':
+          case 'sd_medication_13':
+          case 'sd_alcohol_13':
+          case 'sd_excercise_13':
+          case 'sd_go_to_bed_13':
+          case 'sd_sleep_13':
+          case 'sd_coffee_14':
+          case 'sd_medication_14':
+          case 'sd_alcohol_14':
+          case 'sd_excercise_14':
+          case 'sd_go_to_bed_14':
+          case 'sd_sleep_14':
+          case 'sd_coffee_15':
+          case 'sd_medication_15':
+          case 'sd_alcohol_15':
+          case 'sd_excercise_15':
+          case 'sd_go_to_bed_15':
+          case 'sd_sleep_15':
+          case 'sd_coffee_16':
+          case 'sd_medication_16':
+          case 'sd_alcohol_16':
+          case 'sd_excercise_16':
+          case 'sd_go_to_bed_16':
+          case 'sd_sleep_16':
+          case 'sd_coffee_17':
+          case 'sd_medication_17':
+          case 'sd_alcohol_17':
+          case 'sd_excercise_17':
+          case 'sd_go_to_bed_17':
+          case 'sd_sleep_17':
+          case 'sd_coffee_18':
+          case 'sd_medication_18':
+          case 'sd_alcohol_18':
+          case 'sd_excercise_18':
+          case 'sd_go_to_bed_18':
+          case 'sd_sleep_18':
+          case 'sd_coffee_19':
+          case 'sd_medication_19':
+          case 'sd_alcohol_19':
+          case 'sd_excercise_19':
+          case 'sd_go_to_bed_19':
+          case 'sd_sleep_19':
+          case 'sd_coffee_20':
+          case 'sd_medication_20':
+          case 'sd_alcohol_20':
+          case 'sd_excercise_20':
+          case 'sd_go_to_bed_20':
+          case 'sd_sleep_20':
+          case 'sd_coffee_21':
+          case 'sd_medication_21':
+          case 'sd_alcohol_21':
+          case 'sd_excercise_21':
+          case 'sd_go_to_bed_21':
+          case 'sd_sleep_21':
+          case 'sd_coffee_22':
+          case 'sd_medication_22':
+          case 'sd_alcohol_22':
+          case 'sd_excercise_22':
+          case 'sd_go_to_bed_22':
+          case 'sd_sleep_22':
+          case 'sd_coffee_23':
+          case 'sd_medication_23':
+          case 'sd_alcohol_23':
+          case 'sd_excercise_23':
+          case 'sd_go_to_bed_23':
+          case 'sd_sleep_23':
+          case 'sd_coffee_00':
+          case 'sd_medication_00':
+          case 'sd_alcohol_00':
+          case 'sd_excercise_00':
+          case 'sd_go_to_bed_00':
+          case 'sd_sleep_00':
+          case 'sd_coffee_01':
+          case 'sd_medication_01':
+          case 'sd_alcohol_01':
+          case 'sd_excercise_01':
+          case 'sd_go_to_bed_01':
+          case 'sd_sleep_01':
+          case 'sd_coffee_02':
+          case 'sd_medication_02':
+          case 'sd_alcohol_02':
+          case 'sd_excercise_02':
+          case 'sd_go_to_bed_02':
+          case 'sd_sleep_02':
+          case 'sd_coffee_03':
+          case 'sd_medication_03':
+          case 'sd_alcohol_03':
+          case 'sd_excercise_03':
+          case 'sd_go_to_bed_03':
+          case 'sd_sleep_03':
+          case 'sd_coffee_04':
+          case 'sd_medication_04':
+          case 'sd_alcohol_04':
+          case 'sd_excercise_04':
+          case 'sd_go_to_bed_04':
+          case 'sd_sleep_04':
+          case 'sd_coffee_05':
+          case 'sd_medication_05':
+          case 'sd_alcohol_05':
+          case 'sd_excercise_05':
+          case 'sd_go_to_bed_05':
+          case 'sd_sleep_05':
+          case 'sd_coffee_06':
+          case 'sd_medication_06':
+          case 'sd_alcohol_06':
+          case 'sd_excercise_06':
+          case 'sd_go_to_bed_06':
+          case 'sd_sleep_06':
+          case 'sd_coffee_07':
+          case 'sd_medication_07':
+          case 'sd_alcohol_07':
+          case 'sd_excercise_07':
+          case 'sd_go_to_bed_07':
+          case 'sd_sleep_07':
+          case 'sd_coffee_08':
+          case 'sd_medication_08':
+          case 'sd_alcohol_08':
+          case 'sd_excercise_08':
+          case 'sd_go_to_bed_08':
+          case 'sd_sleep_08':
+          case 'sd_coffee_09':
+          case 'sd_medication_09':
+          case 'sd_alcohol_09':
+          case 'sd_excercise_09':
+          case 'sd_go_to_bed_09':
+          case 'sd_sleep_09':
+          case 'sd_coffee_10':
+          case 'sd_medication_10':
+          case 'sd_alcohol_10':
+          case 'sd_excercise_10':
+          case 'sd_go_to_bed_10':
+          case 'sd_sleep_10':
+          case 'sd_coffee_11':
+          case 'sd_medication_11':
+          case 'sd_alcohol_11':
+          case 'sd_excercise_11':
+          case 'sd_go_to_bed_11':
+          case 'sd_sleep_11':
+                  if(records[I].Data[field]=="on") td.html("1");
+                else td.html("")
+            break;
+        }
+        return cell_render;
+    }
+      //-------------------------------------
+
+
+  }
+</script>
+<style>
+  /*VmInclude:__HOST__/assets/css/grid.css*/
+</style>
