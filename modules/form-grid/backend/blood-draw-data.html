@@ -1,0 +1,26 @@
+<section>
+  VmInclude:__HOST__/assets/html/grid.01.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__HOST__/assets/js/grid.01.multiple.js
+      VmInclude:__HOST__/assets/js/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
+      //-------------------------------------
+      var fields="";
+      fields+=",d1_successful,d1_draw_time,d1_viable,d1_processed,d1_stored_time,d1_location,d1_comments";
+      fields+=",d2_successful,d2_draw_time,d2_viable,d2_processed,d2_stored_time,d2_location,d2_comments";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Modify_Reason,Update_date,Updated_by,Submit_date,Submitted_by,_Delete"
+      //-------------------------------------
+
+    }
+      //-------------------------------------
+
+
+
+</script>
+<style>
+  /*VmInclude:__HOST__/assets/css/grid.css*/
+</style>

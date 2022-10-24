@@ -117,6 +117,8 @@
     m[p+"sleep-diary-v1-d13-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v1-d13-osa-clean",task_name:"Visit #1 - AASM Day 13 Sleep Diary"},
     m[p+"sleep-diary-v1-d14-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v1-d14-osa-clean",form_module:"sleep-diary-v1-d14-form",task_name:"Visit #1 - AASM Day 14 Sleep Diary"},
     m[p+"sleep-diary-v1-d14-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v1-d14-osa-clean",task_name:"Visit #1 - AASM Day 14 Sleep Diary"},
+    m[p+"blood-draw-v1-data"]    ={url:H+"/form-grid/backend/blood-draw-data.html",Table:"blood-draw-v1-osa-clean",form_module:"blood-draw-v1-form",task_name:"Visit #1 - Blood Draw"},
+    m[p+"blood-draw-v1-form"]    ={url:H+"/form-grid/backend/blood-draw-form.html",Table:"blood-draw-v1-osa-clean",task_name:"Visit #1 - Blood Draw"},
 //Visit 2
     m[p+"date-v2-data"]               ={url:H+"/form-grid/backend/date-data.html",Table:"date-v2-osa-clean",form_module:"date-v2-form",task_name:"Visit #2 - Visit Date"},
     m[p+"date-v2-form"]               ={url:H+"/form-grid/backend/date-form.html",Table:"date-v2-osa-clean",task_name:"Visit #2 - Visit Date"},

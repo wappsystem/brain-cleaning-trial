@@ -30,10 +30,10 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Community-dwelling</span></label><br>
-                  <input id="dwelling_1__ID" name="dwelling" type="radio" value="Yes" required>
+                  <label><span class="question">Community-dwelling?</span></label><br>
+                  <input id="dwelling_1__ID" name="dwelling" type="radio" value="1" required>
                   <label class="rd_btn" for="dwelling_1__ID">Yes</label>
-                  <input id="dwelling_2__ID" name="dwelling" type="radio" value="No">
+                  <input id="dwelling_2__ID" name="dwelling" type="radio" value="0">
                   <label class="rd_btn" for="dwelling_2__ID">No</label>
                 </div>
               </fieldset>
@@ -41,10 +41,10 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Age 35-65</span></label><br>
-                  <input id="age_1__ID" name="age" type="radio" value="Yes" required>
+                  <label><span class="question">Age 35-65?</span></label><br>
+                  <input id="age_1__ID" name="age" type="radio" value="1" required>
                   <label class="rd_btn" for="age_1__ID">Yes</label>
-                  <input id="age_2__ID" name="age" type="radio" value="No">
+                  <input id="age_2__ID" name="age" type="radio" value="0">
                   <label class="rd_btn" for="age_2__ID">No</label>
                 </div>
               </fieldset>
@@ -52,11 +52,10 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">PSG confirmed moderate to severe OSA based (AHI
-                      &ge;15/hr)</span></label><br>
-                  <input id="osa_1__ID" name="osa" type="radio" value="Yes" required>
+                  <label><span class="question">PSG confirmed OSA?</span></label><br>
+                  <input id="osa_1__ID" name="osa" type="radio" value="1" required>
                   <label class="rd_btn" for="osa_1__ID">Yes</label>
-                  <input id="osa_2__ID" name="osa" type="radio" value="No">
+                  <input id="osa_2__ID" name="osa" type="radio" value="0">
                   <label class="rd_btn" for="osa_2__ID">No</label>
                 </div>
               </fieldset>
@@ -64,10 +63,32 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Able to give informed consent</span></label><br>
-                  <input id="consent_1__ID" name="consent" type="radio" value="Yes" required>
+                  <label><span class="question">CPAP compliance?</span></label><br>
+                  <input id="compliance_1__ID" name="compliance" type="radio" value="1" required>
+                  <label class="rd_btn" for="compliance_1__ID">Yes</label>
+                  <input id="compliance_2__ID" name="compliance" type="radio" value="0">
+                  <label class="rd_btn" for="compliance_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Withdrawal ok?</span></label><br>
+                  <input id="withdrawal_1__ID" name="withdrawal" type="radio" value="1" required>
+                  <label class="rd_btn" for="withdrawal_1__ID">Yes</label>
+                  <input id="withdrawal_2__ID" name="withdrawal" type="radio" value="0">
+                  <label class="rd_btn" for="withdrawal_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Can consent?</span></label><br>
+                  <input id="consent_1__ID" name="consent" type="radio" value="1" required>
                   <label class="rd_btn" for="consent_1__ID">Yes</label>
-                  <input id="consent_2__ID" name="consent" type="radio" value="No">
+                  <input id="consent_2__ID" name="consent" type="radio" value="0">
                   <label class="rd_btn" for="consent_2__ID">No</label>
                 </div>
               </fieldset>
@@ -75,100 +96,11 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Fluent in English</span></label><br>
-                  <input id="english_1__ID" name="english" type="radio" value="Yes" required>
+                  <label><span class="question">Fluent in English?</span></label><br>
+                  <input id="english_1__ID" name="english" type="radio" value="1" required>
                   <label class="rd_btn" for="english_1__ID">Yes</label>
-                  <input id="english_2__ID" name="english" type="radio" value="No">
+                  <input id="english_2__ID" name="english" type="radio" value="0">
                   <label class="rd_btn" for="english_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Established on CPAP therapy for at least 3 months</span></label><br>
-                  <input id="established_therapy_1__ID" name="established_therapy" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="established_therapy_1__ID">Yes</label>
-                  <input id="established_therapy_2__ID" name="established_therapy" type="radio" value="No">
-                  <label class="rd_btn" for="established_therapy_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Ability to perform neurobehavioural tests</span></label><br>
-                  <input id="neurobehavioural_1__ID" name="neurobehavioural" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="neurobehavioural_1__ID">Yes</label>
-                  <input id="neurobehavioural_2__ID" name="neurobehavioural" type="radio" value="No">
-                  <label class="rd_btn" for="neurobehavioural_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Ability to perform driving simulator task</span></label><br>
-                  <input id="simulator_1__ID" name="simulator" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="simulator_1__ID">Yes</label>
-                  <input id="simulator_2__ID" name="simulator" type="radio" value="No">
-                  <label class="rd_btn" for="simulator_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Current driver’s license</span></label><br>
-                  <input id="license_1__ID" name="license" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="license_1__ID">Yes</label>
-                  <input id="license_2__ID" name="license" type="radio" value="No">
-                  <label class="rd_btn" for="license_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Positive to questions 2 or 6 or 10 on ASTN MVA
-                      Questionnaire</span></label><br>
-                  <input id="MVA_1__ID" name="MVA" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="MVA_1__ID">Yes</label>
-                  <input id="MVA_2__ID" name="MVA" type="radio" value="No">
-                  <label class="rd_btn" for="MVA_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Positive to question 8 of Epworth Sleepiness Scale (ESS)</span></label><br>
-                  <input id="ESS_1__ID" name="ESS" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="ESS_1__ID">Yes</label>
-                  <input id="ESS_2__ID" name="ESS" type="radio" value="No">
-                  <label class="rd_btn" for="ESS_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Physician opinion: Positive for impairment</span></label><br>
-                  <input id="impairment_1__ID" name="impairment" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="impairment_1__ID">Yes</label>
-                  <input id="impairment_2__ID" name="impairment" type="radio" value="No">
-                  <label class="rd_btn" for="impairment_2__ID">No</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="formgroup">
-              <fieldset class="grid-container-1">
-                <div class="">
-                  <label><span class="question">Clinically significant co-morbidity</span></label><br>
-                  <input id="comorbidity_1__ID" name="comorbidity" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="comorbidity_1__ID">Yes</label>
-                  <input id="comorbidity_2__ID" name="comorbidity" type="radio" value="No">
-                  <label class="rd_btn" for="comorbidity_2__ID">No</label>
                 </div>
               </fieldset>
             </div>
@@ -181,48 +113,55 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Major neurological problems <span class="small">(e.g. stroke,
-                        epilepsy, head injury)</span></span></label><br>
-                  <input id="neurological_problems_1__ID" name="neurological_problems" type="radio" value="Yes"
+                  <label><span class="question">Commercial driver?</span></span></label><br>
+                  <input id="com_driver_1__ID" name="com_driver" type="radio" value="1"
                     required>
-                  <label class="rd_btn" for="neurological_problems_1__ID">Yes</label>
-                  <input id="neurological_problems_2__ID" name="neurological_problems" type="radio" value="No">
-                  <label class="rd_btn" for="neurological_problems_2__ID">No</label>
+                  <label class="rd_btn" for="com_driver_1__ID">Yes</label>
+                  <input id="com_driver_2__ID" name="com_driver" type="radio" value="0">
+                  <label class="rd_btn" for="com_driver_2__ID">No</label>
                 </div>
               </fieldset>
             </div>
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Severe mental health disorder<span class="small">(e.g. current major
-                        depression, schizophrenia,
-                        bipolar disorder)</span></span></label><br>
-                  <input id="mental_disorder_1__ID" name="mental_disorder" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="mental_disorder_1__ID">Yes</label>
-                  <input id="mental_disorder_2__ID" name="mental_disorder" type="radio" value="No">
-                  <label class="rd_btn" for="mental_disorder_2__ID">No</label>
+                  <label><span class="question">CVD?</span></span></label><br>
+                  <input id="cvd_1__ID" name="cvd" type="radio" value="1" required>
+                  <label class="rd_btn" for="cvd_1__ID">Yes</label>
+                  <input id="cvd_2__ID" name="cvd" type="radio" value="0">
+                  <label class="rd_btn" for="cvd_2__ID">No</label>
                 </div>
               </fieldset>
             </div>
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Regular use of sleep-affecting medication; benzodiazepines, opioids,
-                      antidepressants</span></label><br>
-                  <input id="medication_use_1__ID" name="medication_use" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="medication_use_1__ID">Yes</label>
-                  <input id="medication_use_2__ID" name="medication_use" type="radio" value="No">
-                  <label class="rd_btn" for="medication_use_2__ID">No</label>
+                  <label><span class="question">MCI or dementia?</span></label><br>
+                  <input id="mci_1__ID" name="mci" type="radio" value="1" required>
+                  <label class="rd_btn" for="mci_1__ID">Yes</label>
+                  <input id="mci_2__ID" name="mci" type="radio" value="0">
+                  <label class="rd_btn" for="mci_2__ID">No</label>
                 </div>
               </fieldset>
             </div>
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Shift worker</span></label><br>
-                  <input id="shiftworker_1__ID" name="shiftworker" type="radio" value="Yes" required>
+                  <label><span class="question">Sedative use?</span></label><br>
+                  <input id="sedative_1__ID" name="sedative" type="radio" value="1" required>
+                  <label class="rd_btn" for="sedative_1__ID">Yes</label>
+                  <input id="sedative_2__ID" name="sedative" type="radio" value="0">
+                  <label class="rd_btn" for="sedative_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Shift worker?</span></label><br>
+                  <input id="shiftworker_1__ID" name="shiftworker" type="radio" value="1" required>
                   <label class="rd_btn" for="shiftworker_1__ID">Yes</label>
-                  <input id="shiftworker_2__ID" name="shiftworker" type="radio" value="No">
+                  <input id="shiftworker_2__ID" name="shiftworker" type="radio" value="0">
                   <label class="rd_btn" for="shiftworker_2__ID">No</label>
                 </div>
               </fieldset>
@@ -230,36 +169,57 @@
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Have travelled overseas within the last 2 weeks</span></label><br>
-                  <input id="overseas_1__ID" name="overseas" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="overseas_1__ID">Yes</label>
-                  <input id="overseas_2__ID" name="overseas" type="radio" value="No">
-                  <label class="rd_btn" for="overseas_2__ID">No</label>
+                  <label><span class="question">Driving impairment?</span></label><br>
+                  <input id="drv_impairment_1__ID" name="drv_impairment" type="radio" value="1" required>
+                  <label class="rd_btn" for="drv_impairment_1__ID">Yes</label>
+                  <input id="drv_impairment_2__ID" name="drv_impairment" type="radio" value="0">
+                  <label class="rd_btn" for="drv_impairment_2__ID">No</label>
                 </div>
               </fieldset>
             </div>
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Professional driver</span></label><br>
-                  <input id="professional_1__ID" name="professional" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="professional_1__ID">Yes</label>
-                  <input id="professional_2__ID" name="professional" type="radio" value="No">
-                  <label class="rd_btn" for="professional_2__ID">No</label>
+                  <label><span class="question">Severe COVID?</span></label><br>
+                  <input id="severe_covid_1__ID" name="severe_covid" type="radio" value="1" required>
+                  <label class="rd_btn" for="severe_covid_1__ID">Yes</label>
+                  <input id="severe_covid_2__ID" name="severe_covid" type="radio" value="0">
+                  <label class="rd_btn" for="severe_covid_2__ID">No</label>
                 </div>
               </fieldset>
             </div>
             <div class="formgroup">
               <fieldset class="grid-container-1">
                 <div class="">
-                  <label><span class="question">Sleep physician has advised against CPAP withdrawal</span></label><br>
-                  <input id="physician_no_1__ID" name="physician_no" type="radio" value="Yes" required>
-                  <label class="rd_btn" for="physician_no_1__ID">Yes</label>
-                  <input id="physician_no_2__ID" name="physician_no" type="radio" value="No">
-                  <label class="rd_btn" for="physician_no_2__ID">No</label>
+                  <label><span class="question">Current COVID?</span></label><br>
+                  <input id="current_covid_1__ID" name="current_covid" type="radio" value="1" required>
+                  <label class="rd_btn" for="current_covid_1__ID">Yes</label>
+                  <input id="current_covid_2__ID" name="current_covid" type="radio" value="0">
+                  <label class="rd_btn" for="current_covid_2__ID">No</label>
                 </div>
               </fieldset>
-            </div>
+              <div class="formgroup">
+                <fieldset class="grid-container-1">
+                  <div class="">
+                    <label><span class="question">Vaccination?</span></label><br>
+                    <input id="vaccination_1__ID" name="vaccination" type="radio" value="1" required>
+                    <label class="rd_btn" for="vaccination_1__ID">Yes</label>
+                    <input id="vaccination_2__ID" name="vaccination" type="radio" value="0">
+                    <label class="rd_btn" for="vaccination_2__ID">No</label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="formgroup">
+                <fieldset class="grid-container-1">
+                  <div class="">
+                    <label><span class="question">Other MHx?</span></label><br>
+                    <input id="other_mhx_1__ID" name="other_mhx" type="radio" value="1" required>
+                    <label class="rd_btn" for="other_mhx_1__ID">Yes</label>
+                    <input id="other_mhx_2__ID" name="other_mhx" type="radio" value="0">
+                    <label class="rd_btn" for="other_mhx_2__ID">No</label>
+                  </div>
+                </fieldset>
+              </div>
           </fieldset>
         </div>
         <div class="formgroup">
@@ -267,9 +227,9 @@
             <label><span class="question">Eligibility</span></label>
             <div class="">
               <label><span class="question">Eligible for study?</span></label><br>
-                <input id="eligible_1__ID" name="eligible" type="radio" value="Yes" required>
+                <input id="eligible_1__ID" name="eligible" type="radio" value="1" required>
                 <label class="rd_btn" for="eligible_1__ID">Yes</label>
-                <input id="eligible_2__ID" name="eligible" type="radio" value="No">
+                <input id="eligible_2__ID" name="eligible" type="radio" value="0">
                 <label class="rd_btn" for="eligible_2__ID">No</label>
             </div>
           </fieldset>
@@ -283,6 +243,36 @@
       //-------------------------------------
       VmInclude: '__HOST__/assets/js/form.01.js'
       VmInclude: '__HOST__/assets/js/shared-form.js'
+      //-------------------------------------
+      var load2 = m.load;
+      m.load = function () {
+        load2();
+      }
+      //-------------------------------------
+      var before_submit = m.before_submit;
+      m.before_submit = function (data, index) {
+        if(data.dwelling=="1" &&
+          data.age=="1" &&
+          data.osa=="1" &&
+          data.compliance=="1" &&
+          data.withdrawal=="1" &&
+          data.consent=="1" &&
+          data.com_driver=="1" &&
+          data.cvd=="0" &&
+          data.mci=="0" &&
+          data.sedative=="0" &&
+          data.shiftworker=="0" &&
+          data.drv_impairment=="0" &&
+          data.severe_covid=="0" &&
+          data.current_covid=="0" &&
+          data.vaccination=="0" &&
+          data.other_mhx=="0") data.eligible="1";
+        else data.eligible="0";
+        
+        
+        )
+        return before_submit(data, index);
+      }
       //-------------------------------------
     }
   </script>
