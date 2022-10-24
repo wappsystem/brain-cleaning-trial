@@ -57,7 +57,12 @@
     m[p+"concom-medication-form"]	={url:H+"/form-grid/backend/concom-medication-form.html",Table:"concom-medication-osa-clean",task_name:"Unscheduled - Concomitant Medication"},
     m[p+"file-notes-data"]	={url:H+"/form-grid/backend/file-notes-data.html",Table:"file-notes-osa-clean",form_module:"file-notes-form",task_name:"Unscheduled - File Notes"},
     m[p+"file-notes-form"]	={url:H+"/form-grid/backend/file-notes-form.html",Table:"file-notes-osa-clean",task_name:"Unscheduled - File Notes"},
-//Screening
+    //Pre- Screening
+    m[p+"pre-screening-data"]	        ={url:H+"/form-grid/backend/pre-screening-data.html",Table:"pre-screening-osa-clean",form_module:"pre-screening-form",task_name:"Pre - Screening"},
+    m[p+"pre-screening-form"]	        ={url:H+"/form-grid/backend/pre-screening-form.html",Table:"pre-screening-osa-clean",task_name:"Pre - Screening"},
+    m[p+"physician-declaration-data"]={url:H+"/form-grid/backend/upload-file-data.html",Table:"physician-declaration-osa-clean",form_module:"physician-declaration-form",task_name:"Pre - Screening - Physician Declaration – Upload"},
+    m[p+"physician-declaration-form"]={url:H+"/form-grid/backend/upload-file-form.html",Table:"physician-declaration-osa-clean",task_name:"Pre - Screening - Physician Declaration – Upload"},
+    //Screening
     m[p+"date-s-data"]               ={url:H+"/form-grid/backend/date-data.html",Table:"date-s-osa-clean",form_module:"date-s-form",task_name:"Screening - Visit Date"},
     m[p+"date-s-form"]               ={url:H+"/form-grid/backend/date-form.html",Table:"date-s-osa-clean",task_name:"Screening - Visit Date"},
     m[p+"consent-s-data"]	        ={url:H+"/form-grid/backend/consent-data.html",Table:"consent-s-osa-clean",form_module:"consent-s-form",task_name:"Screening - Consent Form"},
@@ -130,8 +135,36 @@
     m[p+"medical-history-v2-form"]    ={url:H+"/form-grid/backend/medical-history-form.html",Table:"medical-history-v2-osa-clean",task_name:"Visit #2 - Medical History"},
     m[p+"ess-v2-data"]               ={url:H+"/form-grid/backend/ess-data.html",Table:"ess-v2-osa-clean",form_module:"ess-v2-form",task_name:"Visit #2 - Epworth Sleepiness Scale (ESS)"},
     m[p+"ess-v2-form"]               ={url:H+"/form-grid/backend/ess-form.html",Table:"ess-v2-osa-clean",task_name:"Visit #2 - Epworth Sleepiness Scale (ESS)"},
-    m[p+"sleep-diary-v2-data"]    ={url:H+"/form-grid/backend/sleep-diary-long-data.html",Table:"sleep-diary-v2-osa-clean",form_module:"sleep-diary-v2-form",task_name:"Visit #2 - AASM 2-week Sleep Diary"},
-    m[p+"sleep-diary-v2-form"]    ={url:H+"/form-grid/backend/sleep-diary-long-form.html",Table:"sleep-diary-v2-osa-clean",task_name:"Visit #2 - AASM 2-week Sleep Diary"}
+    m[p+"sleep-diary-v2-d1-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d1-osa-clean",form_module:"sleep-diary-v2-d1-form",task_name:"Visit #2 - AASM Day 1 Sleep Diary"},
+    m[p+"sleep-diary-v2-d1-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d1-osa-clean",task_name:"Visit #2 - AASM Day 1 Sleep Diary"},
+    m[p+"sleep-diary-v2-d2-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d2-osa-clean",form_module:"sleep-diary-v2-d2-form",task_name:"Visit #2 - AASM Day 2 Sleep Diary"},
+    m[p+"sleep-diary-v2-d2-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d2-osa-clean",task_name:"Visit #2 - AASM Day 2 Sleep Diary"},
+    m[p+"sleep-diary-v2-d3-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d3-osa-clean",form_module:"sleep-diary-v2-d3-form",task_name:"Visit #2 - AASM Day 3 Sleep Diary"},
+    m[p+"sleep-diary-v2-d3-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d3-osa-clean",task_name:"Visit #2 - AASM Day 3 Sleep Diary"},
+    m[p+"sleep-diary-v2-d4-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d4-osa-clean",form_module:"sleep-diary-v2-d4-form",task_name:"Visit #2 - AASM Day 4 Sleep Diary"},
+    m[p+"sleep-diary-v2-d4-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d4-osa-clean",task_name:"Visit #2 - AASM Day 4 Sleep Diary"},
+    m[p+"sleep-diary-v2-d5-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d5-osa-clean",form_module:"sleep-diary-v2-d5-form",task_name:"Visit #2 - AASM Day 5 Sleep Diary"},
+    m[p+"sleep-diary-v2-d5-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d5-osa-clean",task_name:"Visit #2 - AASM Day 5 Sleep Diary"},
+    m[p+"sleep-diary-v2-d6-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d6-osa-clean",form_module:"sleep-diary-v2-d6-form",task_name:"Visit #2 - AASM Day 6 Sleep Diary"},
+    m[p+"sleep-diary-v2-d6-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d6-osa-clean",task_name:"Visit #2 - AASM Day 6 Sleep Diary"},
+    m[p+"sleep-diary-v2-d7-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d7-osa-clean",form_module:"sleep-diary-v2-d7-form",task_name:"Visit #2 - AASM Day 7 Sleep Diary"},
+    m[p+"sleep-diary-v2-d7-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d7-osa-clean",task_name:"Visit #2 - AASM Day 7 Sleep Diary"},
+    m[p+"sleep-diary-v2-d8-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d8-osa-clean",form_module:"sleep-diary-v2-d8-form",task_name:"Visit #2 - AASM Day 8 Sleep Diary"},
+    m[p+"sleep-diary-v2-d8-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d8-osa-clean",task_name:"Visit #2 - AASM Day 8 Sleep Diary"},
+    m[p+"sleep-diary-v2-d9-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d9-osa-clean",form_module:"sleep-diary-v2-d9-form",task_name:"Visit #2 - AASM Day 9 Sleep Diary"},
+    m[p+"sleep-diary-v2-d9-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d9-osa-clean",task_name:"Visit #2 - AASM Day 9 Sleep Diary"},
+    m[p+"sleep-diary-v2-d10-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d10-osa-clean",form_module:"sleep-diary-v2-d10-form",task_name:"Visit #2 - AASM Day 10 Sleep Diary"},
+    m[p+"sleep-diary-v2-d10-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d10-osa-clean",task_name:"Visit #2 - AASM Day 10 Sleep Diary"},
+    m[p+"sleep-diary-v2-d11-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d11-osa-clean",form_module:"sleep-diary-v2-d11-form",task_name:"Visit #2 - AASM Day 11 Sleep Diary"},
+    m[p+"sleep-diary-v2-d11-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d11-osa-clean",task_name:"Visit #2 - AASM Day 11 Sleep Diary"},
+    m[p+"sleep-diary-v2-d12-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d12-osa-clean",form_module:"sleep-diary-v2-d12-form",task_name:"Visit #2 - AASM Day 12 Sleep Diary"},
+    m[p+"sleep-diary-v2-d12-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d12-osa-clean",task_name:"Visit #2 - AASM Day 12 Sleep Diary"},
+    m[p+"sleep-diary-v2-d13-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d13-osa-clean",form_module:"sleep-diary-v2-d13-form",task_name:"Visit #2 - AASM Day 13 Sleep Diary"},
+    m[p+"sleep-diary-v2-d13-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d13-osa-clean",task_name:"Visit #2 - AASM Day 13 Sleep Diary"},
+    m[p+"sleep-diary-v2-d14-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d14-osa-clean",form_module:"sleep-diary-v2-d14-form",task_name:"Visit #2 - AASM Day 14 Sleep Diary"},
+    m[p+"sleep-diary-v2-d14-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d14-osa-clean",task_name:"Visit #2 - AASM Day 14 Sleep Diary"},
+    m[p+"blood-draw-v2-data"]    ={url:H+"/form-grid/backend/blood-draw-data.html",Table:"blood-draw-v2-osa-clean",form_module:"blood-draw-v2-form",task_name:"Visit #2 - Blood Draw"},
+    m[p+"blood-draw-v2-form"]    ={url:H+"/form-grid/backend/blood-draw-form.html",Table:"blood-draw-v2-osa-clean",task_name:"Visit #2 - Blood Draw"}
 
     //if(window.location.toString().indexOf('tb=demo')!=-1){
         for(p in $vm.module_list){

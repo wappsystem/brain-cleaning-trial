@@ -1,0 +1,123 @@
+<div id=D__ID>
+  <!--third html start -->
+  <div class="container mt-95">
+    <!-- form container start -->
+    <div class="formbox">
+      <!-- form start -->
+      <form id="F__ID">
+        <span id=title__ID></span>
+        <!-- participant name and study id -->
+        <div id="participant_div__ID">
+          <div class="formgroup">
+            <fieldset class="grid-container-2">
+              <div>
+                <label><span class="question">Participant</span>
+                  <input type=text name="Participant" class=formcontrol id=Participant__ID data-id="Participant" />
+                </label>
+              </div>
+              <div>
+                <label><span class="question">Participant ID</span>
+                  <input type=text name="Participant_uid" class=formcontrol readonly />
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <!-- form group -->
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">PSG confirmed OSA?</span></label><br>
+                  <input id="psg_1__ID" name="psg" type="radio" value="1" required>
+                  <label class="rd_btn" for="psg_1__ID">Yes</label>
+                  <input id="psg_2__ID" name="psg" type="radio" value="0">
+                  <label class="rd_btn" for="psg_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">CPAP compliance?</span></label><br>
+                  <input id="cpap_1__ID" name="cpap" type="radio" value="1" required>
+                  <label class="rd_btn" for="cpap_1__ID">Yes</label>
+                  <input id="cpap_2__ID" name="cpap" type="radio" value="0">
+                  <label class="rd_btn" for="cpap_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Withdrawal ok?</span></label><br>
+                  <input id="withdrawal_1__ID" name="withdrawal" type="radio" value="1" required>
+                  <label class="rd_btn" for="withdrawal_1__ID">Yes</label>
+                  <input id="withdrawal_2__ID" name="withdrawal" type="radio" value="0">
+                  <label class="rd_btn" for="withdrawal_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Physician permission?</span></label><br>
+                  <input id="permission_1__ID" name="permission" type="radio" value="1" required>
+                  <label class="rd_btn" for="permission_1__ID">Yes</label>
+                  <input id="permission_2__ID" name="permission" type="radio" value="0">
+                  <label class="rd_btn" for="permission_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+        <div class="formgroup">
+          <fieldset class="grid-container-1">
+            <div class="">
+              <label><span class="question">Eligible? (Readonly)</span></label><br>
+                <input id="eligible_1__ID" name="eligible" type="radio" value="1" disabled>
+                <label class="rd_btn" for="eligible_1__ID">Yes</label>
+                <input id="eligible_2__ID" name="eligible" type="radio" value="0" disabled>
+                <label class="rd_btn" for="eligible_2__ID">No</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="formgroup">
+          <fieldset class="">
+              <div class=grid-container-2>
+                  <div><label><span class="question">Physician name</span><input type=text
+                              class="formcontrol" name=physician_name></label></div>
+                  <div><label><span class="question">Physician contact</span><input type=text
+                              class="formcontrol" name=physician_contact></label></div>
+              </div>
+          </fieldset>
+      </div>
+
+        VmInclude: __HOST__/assets/html/modification_status.html
+      </form>
+    </div>
+  </div>
+  <script>
+    function F__ID() {
+      //-------------------------------------
+      VmInclude: '__HOST__/assets/js/form.01.js'
+      VmInclude: '__HOST__/assets/js/shared-form.js'
+      //-------------------------------------
+      var before_submit = m.before_submit;
+            m.before_submit = function (data, index) {
+                console.log(JSON.stringify(data))
+                if(data.psg=='1' &&
+                    data.cpap=='1' &&
+                    data.withdrawal=='1' &&
+                    data.permission =='1' ){
+                        data.eligible='1';                        
+                    }
+                    else{
+                        data.eligible='0';                        
+                    }
+                return before_submit(data, index);
+            }
+
+    }
+  </script>
+  <style>
+    /*VmInclude:__HOST__/assets/css/wapp-form.css*/
+  </style>
+</div>
