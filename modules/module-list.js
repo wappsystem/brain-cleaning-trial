@@ -77,6 +77,8 @@
     m[p+"medical-history-s-form"]    ={url:H+"/form-grid/backend/medical-history-form.html",Table:"medical-history-s-osa-clean",task_name:"Screening - Medical History"},
     m[p+"ess-s-data"]               ={url:H+"/form-grid/backend/ess-data.html",Table:"ess-s-osa-clean",form_module:"ess-s-form",task_name:"Screening - Epworth Sleepiness Scale (ESS)"},
     m[p+"ess-s-form"]               ={url:H+"/form-grid/backend/ess-form.html",Table:"ess-s-osa-clean",task_name:"Screening - Epworth Sleepiness Scale (ESS)"},
+    m[p+"mva-astn-s-data"]               ={url:H+"/form-grid/backend/mva-astn-data.html",Table:"mva-astn-s-osa-clean",form_module:"mva-astn-s-form",task_name:"Screening -ASTN-Motor Vehicle Accident Questionnaire"},
+    m[p+"mva-astn-s-form"]               ={url:H+"/form-grid/backend/mva-astn-form.html",Table:"mva-astn-s-osa-clean",task_name:"Screening - ASTN-Motor Vehicle Accident Questionnaire"},
     m[p+"cpap-withdrawal-s-data"]    ={url:H+"/form-grid/backend/cpap-withdrawal-data.html",Table:"cpap-withdrawal-s-osa-clean",form_module:"cpap-withdrawal-s-form",task_name:"Screening - CPAP Withdrawal Questionnaire"},
     m[p+"cpap-withdrawal-s-form"]    ={url:H+"/form-grid/backend/cpap-withdrawal-form.html",Table:"cpap-withdrawal-s-osa-clean",task_name:"Screening - CPAP Withdrawal Questionnaire"},
     m[p+"psg-report-s-data"]={url:H+"/form-grid/backend/upload-file-data.html",Table:"psg-report-s-osa-clean",form_module:"psg-report-s-form",task_name:"Screening - PSG Diagnostic Report – Upload"},
@@ -124,7 +126,15 @@
     m[p+"sleep-diary-v1-d14-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v1-d14-osa-clean",task_name:"Visit #1 - AASM Day 14 Sleep Diary"},
     m[p+"blood-draw-v1-data"]    ={url:H+"/form-grid/backend/blood-draw-data.html",Table:"blood-draw-v1-osa-clean",form_module:"blood-draw-v1-form",task_name:"Visit #1 - Blood Draw"},
     m[p+"blood-draw-v1-form"]    ={url:H+"/form-grid/backend/blood-draw-form.html",Table:"blood-draw-v1-osa-clean",task_name:"Visit #1 - Blood Draw"},
-//Visit 2
+    m[p+"psg-report-v1-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"psg-report-v1-osa-clean",form_module:"psg-report-v1-form",task_name:"Visit #1 - PSG Report – Upload"},
+    m[p+"psg-report-v1-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"psg-report-v1-osa-clean",task_name:"Visit #1 - PSG Report – Upload"},
+    m[p+"hdeeg-report-v1-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"hdeeg-report-v1-osa-clean",form_module:"hdeeg-report-v1-form",task_name:"Visit #1 - HD-EEG – Upload"},
+    m[p+"hdeeg-report-v1-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"hdeeg-report-v1-osa-clean",task_name:"Visit #1 - HD-EEG – Upload"},
+    m[p+"fnirs-report-v1-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"fnirs-report-v1-osa-clean",form_module:"fnirs-report-v1-form",task_name:"Visit #1 - fNIRS Report – Upload"},
+    m[p+"fnirs-report-v1-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"fnirs-report-v1-osa-clean",task_name:"Visit #1 - fNIRS Report – Upload"},
+    m[p+"fingerbp-report-v1-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"fingerbp-report-v1-osa-clean",form_module:"fingerbp-report-v1-form",task_name:"Visit #1 - Finger BP – Upload"},
+    m[p+"fingerbp-report-v1-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"fingerbp-report-v1-osa-clean",task_name:"Visit #1 - Finger BP – Upload"},
+    //Visit 2
     m[p+"date-v2-data"]               ={url:H+"/form-grid/backend/date-data.html",Table:"date-v2-osa-clean",form_module:"date-v2-form",task_name:"Visit #2 - Visit Date"},
     m[p+"date-v2-form"]               ={url:H+"/form-grid/backend/date-form.html",Table:"date-v2-osa-clean",task_name:"Visit #2 - Visit Date"},
     m[p+"anthropometry-v2-data"]	        ={url:H+"/form-grid/backend/anthropometry-data.html",Table:"anthropometry-v2-osa-clean",form_module:"anthropometry-v2-form",task_name:"Visit #2 - Anthropometry"},
@@ -164,7 +174,15 @@
     m[p+"sleep-diary-v2-d14-data"]    ={url:H+"/form-grid/backend/sleep-diary-data.html",Table:"sleep-diary-v2-d14-osa-clean",form_module:"sleep-diary-v2-d14-form",task_name:"Visit #2 - AASM Day 14 Sleep Diary"},
     m[p+"sleep-diary-v2-d14-form"]    ={url:H+"/form-grid/backend/sleep-diary-form.html",Table:"sleep-diary-v2-d14-osa-clean",task_name:"Visit #2 - AASM Day 14 Sleep Diary"},
     m[p+"blood-draw-v2-data"]    ={url:H+"/form-grid/backend/blood-draw-data.html",Table:"blood-draw-v2-osa-clean",form_module:"blood-draw-v2-form",task_name:"Visit #2 - Blood Draw"},
-    m[p+"blood-draw-v2-form"]    ={url:H+"/form-grid/backend/blood-draw-form.html",Table:"blood-draw-v2-osa-clean",task_name:"Visit #2 - Blood Draw"}
+    m[p+"blood-draw-v2-form"]    ={url:H+"/form-grid/backend/blood-draw-form.html",Table:"blood-draw-v2-osa-clean",task_name:"Visit #2 - Blood Draw"},
+    m[p+"psg-report-v2-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"psg-report-v2-osa-clean",form_module:"psg-report-v2-form",task_name:"Visit #2 - PSG Report – Upload"},
+    m[p+"psg-report-v2-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"psg-report-v2-osa-clean",task_name:"Visit #2 - PSG Report – Upload"},
+    m[p+"hdeeg-report-v2-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"hdeeg-report-v2-osa-clean",form_module:"hdeeg-report-v2-form",task_name:"Visit #2 - HD-EEG – Upload"},
+    m[p+"hdeeg-report-v2-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"hdeeg-report-v2-osa-clean",task_name:"Visit #2 - HD-EEG – Upload"},
+    m[p+"fnirs-report-v2-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"fnirs-report-v2-osa-clean",form_module:"fnirs-report-v2-form",task_name:"Visit #2 - fNIRS Report – Upload"},
+    m[p+"fnirs-report-v2-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"fnirs-report-v2-osa-clean",task_name:"Visit #2 - fNIRS Report – Upload"},
+    m[p+"fingerbp-report-v2-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"fingerbp-report-v2-osa-clean",form_module:"fingerbp-report-v2-form",task_name:"Visit #2 - Finger BP – Upload"},
+    m[p+"fingerbp-report-v2-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"fingerbp-report-v2-osa-clean",task_name:"Visit #2 - Finger BP – Upload"}
 
     //if(window.location.toString().indexOf('tb=demo')!=-1){
         for(p in $vm.module_list){

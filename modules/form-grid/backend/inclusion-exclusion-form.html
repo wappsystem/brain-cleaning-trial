@@ -114,8 +114,7 @@
               <fieldset class="grid-container-1">
                 <div class="">
                   <label><span class="question">Commercial driver?</span></span></label><br>
-                  <input id="com_driver_1__ID" name="com_driver" type="radio" value="1"
-                    required>
+                  <input id="com_driver_1__ID" name="com_driver" type="radio" value="1" required>
                   <label class="rd_btn" for="com_driver_1__ID">Yes</label>
                   <input id="com_driver_2__ID" name="com_driver" type="radio" value="0">
                   <label class="rd_btn" for="com_driver_2__ID">No</label>
@@ -198,28 +197,29 @@
                   <label class="rd_btn" for="current_covid_2__ID">No</label>
                 </div>
               </fieldset>
-              <div class="formgroup">
-                <fieldset class="grid-container-1">
-                  <div class="">
-                    <label><span class="question">Vaccination?</span></label><br>
-                    <input id="vaccination_1__ID" name="vaccination" type="radio" value="1" required>
-                    <label class="rd_btn" for="vaccination_1__ID">Yes</label>
-                    <input id="vaccination_2__ID" name="vaccination" type="radio" value="0">
-                    <label class="rd_btn" for="vaccination_2__ID">No</label>
-                  </div>
-                </fieldset>
-              </div>
-              <div class="formgroup">
-                <fieldset class="grid-container-1">
-                  <div class="">
-                    <label><span class="question">Other MHx?</span></label><br>
-                    <input id="other_mhx_1__ID" name="other_mhx" type="radio" value="1" required>
-                    <label class="rd_btn" for="other_mhx_1__ID">Yes</label>
-                    <input id="other_mhx_2__ID" name="other_mhx" type="radio" value="0">
-                    <label class="rd_btn" for="other_mhx_2__ID">No</label>
-                  </div>
-                </fieldset>
-              </div>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Vaccination?</span></label><br>
+                  <input id="vaccination_1__ID" name="vaccination" type="radio" value="1" required>
+                  <label class="rd_btn" for="vaccination_1__ID">Yes</label>
+                  <input id="vaccination_2__ID" name="vaccination" type="radio" value="0">
+                  <label class="rd_btn" for="vaccination_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="formgroup">
+              <fieldset class="grid-container-1">
+                <div class="">
+                  <label><span class="question">Other MHx?</span></label><br>
+                  <input id="other_mhx_1__ID" name="other_mhx" type="radio" value="1" required>
+                  <label class="rd_btn" for="other_mhx_1__ID">Yes</label>
+                  <input id="other_mhx_2__ID" name="other_mhx" type="radio" value="0">
+                  <label class="rd_btn" for="other_mhx_2__ID">No</label>
+                </div>
+              </fieldset>
+            </div>
           </fieldset>
         </div>
         <div class="formgroup">
@@ -227,10 +227,10 @@
             <label><span class="question">Eligibility</span></label>
             <div class="">
               <label><span class="question">Eligible for study?</span></label><br>
-                <input id="eligible_1__ID" name="eligible" type="radio" value="1" required>
-                <label class="rd_btn" for="eligible_1__ID">Yes</label>
-                <input id="eligible_2__ID" name="eligible" type="radio" value="0">
-                <label class="rd_btn" for="eligible_2__ID">No</label>
+              <input id="eligible_1__ID" name="eligible" type="radio" value="1" disabled>
+              <label class="rd_btn" for="eligible_1__ID">Yes</label>
+              <input id="eligible_2__ID" name="eligible" type="radio" value="0" disabled>
+              <label class="rd_btn" for="eligible_2__ID">No</label>
             </div>
           </fieldset>
         </div>
@@ -251,26 +251,24 @@
       //-------------------------------------
       var before_submit = m.before_submit;
       m.before_submit = function (data, index) {
-        if(data.dwelling=="1" &&
-          data.age=="1" &&
-          data.osa=="1" &&
-          data.compliance=="1" &&
-          data.withdrawal=="1" &&
-          data.consent=="1" &&
-          data.com_driver=="1" &&
-          data.cvd=="0" &&
-          data.mci=="0" &&
-          data.sedative=="0" &&
-          data.shiftworker=="0" &&
-          data.drv_impairment=="0" &&
-          data.severe_covid=="0" &&
-          data.current_covid=="0" &&
-          data.vaccination=="0" &&
-          data.other_mhx=="0") data.eligible="1";
-        else data.eligible="0";
-        
-        
-        )
+        if (data.dwelling == "1" &&
+          data.age == "1" &&
+          data.osa == "1" &&
+          data.compliance == "1" &&
+          data.withdrawal == "1" &&
+          data.consent == "1" &&
+          data.english == "1" &&
+          data.com_driver == "0" &&
+          data.cvd == "0" &&
+          data.mci == "0" &&
+          data.sedative == "0" &&
+          data.shiftworker == "0" &&
+          data.drv_impairment == "0" &&
+          data.severe_covid == "0" &&
+          data.current_covid == "0" &&
+          data.vaccination == "0" &&
+          data.other_mhx == "0") data.eligible = "1";
+        else data.eligible = "0";
         return before_submit(data, index);
       }
       //-------------------------------------
