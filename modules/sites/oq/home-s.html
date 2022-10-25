@@ -23,7 +23,7 @@
 	</div>
 <script>
     function F__ID(){
-        console.log("AA")
+        console.log("BB")
         //-------------------------------------
         var m=$vm.module_list['__MODULE__'];
         //-------------------------------------
@@ -44,9 +44,10 @@
             $vm.pw=password;
 		}
         $('#D__ID').on('load',function(){
-            $('#vm_signout').hide();
+            $('#signout__ID').hide();
 		})
         $('#signin__ID').on('click',function(){
+            console.log("CC")
 			//------------------------------------
 			$('#ErrMsg__ID').text("");
             var username=$('#username__ID').val();
@@ -61,10 +62,11 @@
                     $vm.set_token(res.sys.token,username);
                     $vm.online_questionnaire=1;
                     $('#vm_username').text('Signed in as '+res.sys.username);
-                    var x = document.getElementById("vm_signout");
+/*                    var x = document.getElementById("signout__ID");
+                    console.log(x)
                     x.style.display = "block"
-                    //console.log(x)
-                    console.log(JSON.stringify(res.result))
+*/                    
+                    console.log(JSON.stringify("DDD: "+res.result))
                     $vm.load_module("panel-oq-s",'',{record:res.result});
                 }
                 else{

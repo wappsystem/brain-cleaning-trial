@@ -93,7 +93,7 @@ m.before_submit=function(data){
 var status_of_data=function(data){
     var N1=0,N2=0;
     for(key in data){
-        if(key!="" && key!="Participant" && key!="Participant_uid" && key!="sysStatus" && key!="_status"){
+        if(key!="" && key!="Participant" && key!="Participant_uid" && key!="sysStatus" && key!="_status" && key!="Modify_Reason" && key!="Modify_Reason_other"){
             console.log(key+',')//+' - '+ data[key]);
             N2++;
             if(data[key]=='') N1++;
