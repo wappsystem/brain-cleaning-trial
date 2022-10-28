@@ -1,32 +1,20 @@
-<div id=page__ID>
-    <div class="container" style="padding-bottom:30px">
-        <div class="cta-inner">
-          <div class="cta-text">
-            <h2 style="font-family:Roboto Slab">Frågeformulär Entré</h2>
-            <p class="text-transparent text-lead">
-            </p>
-    		<h4  style="font-family:Roboto Slab">Var vänlig och fyll i följand frågeformulär.<br><br></h4>
-            <div id=items__ID  class= ""></div><h4></h4>
-            <h4  style="font-family:Roboto Slab">
-               När de är ifyllda klicka på "Logga ut". <br>Tack!<br><br>
-            </h4>
-            <a name=signinout onclick="$vm.signout();" class="btn btn-primary" style='cursor:pointer'>Logga ut</a>
-          </div>
-        </div>
-      </div>
-<!--
-	<div id=panel__ID class="container-fluid" style='max-width:800px'>
-		<div class="text-center panel__ID form-group">
-			<h2><br>Questionnaire Portal</h2>
-    	  	<hr style='border-top:1px solid #000;'></hr>
-    		<h4 class= "text-left">Please complete each of the following questionnaires.<br><br></h4>
-            <div id=items__ID  class= "text-left"></div>
-            <h4 class= "">
-                Once they are completed please click on ‘sign-out’ below, to exit the system. <br>Thank you!<br><br>
-            </h4>
-            <a name=signinout onclick="$vm.signout();" class="btn btn-primary" style='cursor:pointer'>Sign out</a>
-    	</div>
-	</div>-->
+<div id=page__ID class="mt-95 textcenter">
+    <div class="container">
+		<div id=panel__ID class="">
+			<div class="">
+				<h2><br>Questionnaire Portal<br>
+				Visit 1</h2>
+				  <hr></hr>
+				<h4 class= "">Please complete each of the following questionnaires.</h4>
+				<div id=items__ID  class= ""></div>
+				<h4 class= "">
+					Once they are completed please click on ‘sign-out’ below, to exit the system. <br>Thank you!
+				</h4>
+				<a name=signinout onclick="$vm.signout();" class="btn">Sign out</a><br><br>
+			</div>
+		</div>
+    </div>
+
 </div>
 <!-- <div id=panel__ID>
     Please answer the following questionnaires. Follow the instruction on each of them.<br><br>
@@ -44,7 +32,7 @@
 		//--------------------------------------------------------
 		$('#D__ID').on('show',function(){
             var record=$vm.vm['__ID'].input.record;
-			id_list='halsodeklaration-form'
+			id_list='ess-v1-form,medication-v1-form,medical-history-v1-form'
 			//id_list='eq-5d-bl-form,eheals-bl-form'
             if(id_list==undefined){
                 alert("No questionnaire was found");
@@ -70,20 +58,24 @@
 				var mm=$vm.module_list[m];
 				if(mm!=undefined){
 					task_name=mm.task_name;
+					var tn=task_name.split(" - ")
+					task_name=tn[1];
 					status[m].Table=mm.Table;
 				}
-				txt+="<li m="+m+">"+task_name+"</li><br>";
+				//txt+="<li class='formcontrol' m="+m+">"+task_name+"</li><br>";
+				txt+="<label class='rd_btn' m="+m+">"+task_name+"</label><br>"
 		    }
             txt+""; //"</ul>";
 		    $('#items__ID').html(txt);
 		    //----------------------------------
-			$('#items__ID li').each(function(){
+			$('#items__ID label').each(function(){
 		        var $li=$(this);
 				$li.removeClass('li_allowed__ID')
-				$li.addClass('li_not_allowed__ID qbtn')
+				$li.addClass('li_not_allowed__ID')
+				$li.removeClass('done__ID');
 			})
 			//----------------------------------
-			$('#items__ID li').each(function(){
+			$('#items__ID label').each(function(){
 		        var $li=$(this);
 		        var m=$li.attr('m');
 		        if(status[m].rid==0){
@@ -97,13 +89,13 @@
                         }
                         else{
                             status[m].rid=1;
+							$li.removeClass('li_not_allowed__ID')
+							$li.addClass('done__ID');
                         }
                     })
                     jQuery.ajaxSetup({async:true});
 		        }
-				$li.addClass('done');
-		        if(status[m].rid==0){
-					$li.removeClass('done');
+		        if(status[m].rid==0){				
 					$li.removeClass('li_not_allowed__ID')
 					$li.addClass('li_allowed__ID')
 		            var task_name=$li.html();
@@ -123,16 +115,14 @@
 	}
 </script>
 <style>
-	#D__ID{
+/*	#D__ID{
 		height:100%;
         overflow:auto;
 		animation: vm_module_fadein 1.0s;
-		/*background:rgba(100,103,94,0.2);*/
 	}
 	#page__ID{
 		height:100%;
 		display: flex;
-		/*align-items: center;*/
 		padding-top:50px;
 	}
 	.panel__ID{
@@ -146,22 +136,33 @@
 		#page__ID{
 			display: block;
 		}
-	}
-    #panel__ID li{
+	}*/
+
+    /*#panel__ID li{
+		cursor:pointer;
+	}*/
+    #panel__ID label{
 		cursor:pointer;
 	}
-	ul {
+	/*ul {
 		list-style:none;
-	}
-	.li_not_allowed__ID{
-		color:#ccc!important;
+	}*/
+	.done__ID{
+		background-color: #66ad5d!important;
+		color: #fff!important;
 		cursor:not-allowed!important;
 	}
-	.li_allowed__ID{
-		color:rgb(255, 255, 255)!important;
+	.li_not_allowed__ID{
+		background-color:rgb(201, 94, 94)!important;
+		color: #fff!important;
+		cursor:not-allowed!important;
+	}
+ 	.li_allowed__ID{
+		background-color:rgb(214, 189, 50);
+		color: #000!important;
 		cursor:pointer!important;
 	}
-    /*VmInclude:__HOST__/assets/css/landing.css*/
+
     /*VmInclude:__HOST__/assets/css/wapp-form.css*/
 
 </style>

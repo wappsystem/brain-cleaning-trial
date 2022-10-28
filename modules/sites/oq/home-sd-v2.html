@@ -5,7 +5,7 @@
                     <div class="">
                         <h2  class="" >Entry to</h2>
                         <h4 class="" >Questionnaire Portal</h4>
-                        <h4 class="" >Screening</h4>
+                        <h4 class="" >Visit 2 Sleep Diary</h4>
                         <hr style='border-top:1px solid #fff;'></hr>
                         <div class="">
                             <input id=username__ID placeholder="Username" class="formcontrol" autocomplete="off" />
@@ -23,6 +23,7 @@
 	</div>
 <script>
     function F__ID(){
+        console.log("AA")
         //-------------------------------------
         var m=$vm.module_list['__MODULE__'];
         //-------------------------------------
@@ -43,10 +44,9 @@
             $vm.pw=password;
 		}
         $('#D__ID').on('load',function(){
-            $('#signout__ID').hide();
+            $('#vm_signout').hide();
 		})
         $('#signin__ID').on('click',function(){
-            console.log("CC")
 			//------------------------------------
 			$('#ErrMsg__ID').text("");
             var username=$('#username__ID').val();
@@ -65,8 +65,7 @@
                     console.log(x)
                     x.style.display = "block"
 */                    
-                    console.log(JSON.stringify("DDD: "+res.result))
-                    $vm.load_module("panel-oq-s",'',{record:res.result});
+                    $vm.load_module("panel-oq-sd-v2",'',{record:res.result});
                 }
                 else{
                     $('#ErrMsg__ID').text("Invalid participant login ID or password.")
@@ -81,6 +80,7 @@
         display: flex;
         align-items: center;
     }
+    /*VmInclude:__HOST__/assets/css/landing.css*/
     /*VmInclude:__HOST__/assets/css/wapp-form.css*/
 </style>
 </div>

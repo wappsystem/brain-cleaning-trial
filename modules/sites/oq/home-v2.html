@@ -61,11 +61,11 @@
                     $vm.set_token(res.sys.token,username);
                     $vm.online_questionnaire=1;
                     $('#vm_username').text('Signed in as '+res.sys.username);
-                    var x = document.getElementById("vm_signout");
+/*                  var x = document.getElementById("signout__ID");
+                    console.log(x)
                     x.style.display = "block"
-                    //console.log(x)
-                    console.log(JSON.stringify(res.result))
-                    $vm.load_module("panel-oq-s",'',{record:res.result});
+*/                    
+                    $vm.load_module("panel-oq-v2",'',{record:res.result});
                 }
                 else{
                     $('#ErrMsg__ID').text("Invalid participant login ID or password.")
