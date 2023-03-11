@@ -54,11 +54,11 @@
 
     m[p+"pre-withdrawal-data"]	={url:H+"/form-grid/backend/withdrawal-data.html",Table:"pre-withdrawal-osa-clean",form_module:"pre-withdrawal-form",task_name:"Pre Study Withdrawal"},
     m[p+"pre-withdrawal-form"]	={url:H+"/form-grid/backend/withdrawal-form.html",Table:"pre-withdrawal-osa-clean",task_name:"Pre Study Withdrawal"},
+    m[p+"withdrawal-data"]	={url:H+"/form-grid/backend/withdrawal-data.html",Table:"withdrawal-osa-clean",form_module:"withdrawal-form",task_name:"Study Withdrawal"},
+    m[p+"withdrawal-form"]	={url:H+"/form-grid/backend/withdrawal-form.html",Table:"withdrawal-osa-clean",task_name:"Study Withdrawal"},
 
     m[p+"adverse-event-data"]	={url:H+"/form-grid/backend/adverse-event-data.html",Table:"adverse-event-osa-clean",form_module:"adverse-event-form",task_name:"Unscheduled - Adverse Event"},
     m[p+"adverse-event-form"]	={url:H+"/form-grid/backend/adverse-event-form.html",Table:"adverse-event-osa-clean",task_name:"Unscheduled -  Adverse Event"},
-    //m[p+"withdrawal-data"]	={url:H+"/form-grid/backend/withdrawal-data.html",Table:"withdrawal-osa-clean",form_module:"withdrawal-form",task_name:"Unscheduled - Withdrawal"},
-    //m[p+"withdrawal-form"]	={url:H+"/form-grid/backend/withdrawal-form.html",Table:"withdrawal-osa-clean",task_name:"Unscheduled - Withdrawal"},
     m[p+"concom-medication-data"]	={url:H+"/form-grid/backend/concom-medication-data.html",Table:"concom-medication-osa-clean",form_module:"concom-medication-form",task_name:"Unscheduled - Concomitant Medication"},
     m[p+"concom-medication-form"]	={url:H+"/form-grid/backend/concom-medication-form.html",Table:"concom-medication-osa-clean",task_name:"Unscheduled - Concomitant Medication"},
     m[p+"file-notes-data"]	={url:H+"/form-grid/backend/file-notes-data.html",Table:"file-notes-osa-clean",form_module:"file-notes-form",task_name:"Unscheduled - File Notes"},

@@ -9,7 +9,7 @@
             //-------------------------------------
             $('#title__ID').text('Participants');            
             //-------------------------------------
-            var fields="_Participant_ID,Subject_ID,Screening_Number,Randomisation_Number|I1,Subject_Initials,Gender,DOB,_Data_Entry,_Screening_Questionnaires,_Visit_1_SD_Questionnaires,_Visit_1_Questionnaires,_Visit_2_SD_Questionnaires,_Visit_2_Questionnaires,_Login_ID,_Password";
+            var fields="_Participant_ID,Subject_ID,Screening_Number,Randomisation_Number|I1,Subject_Initials,Gender,DOB,_Data_Entry,_Screening_Questionnaires,_Visit_1_SD,_Visit_1_Questionnaires,_Visit_2_SD,_Visit_2_Questionnaires,_Login_ID,_Password";
             m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
             //-------------------------------------
             m.cell_render=function(records,I,field,td,set_value,source){
@@ -59,7 +59,7 @@
     						window.open(q_url);
                         });
                         break;
-                        case '_Visit_1_SD_Questionnaires':
+                        case '_Visit_1_SD':
                         //MongoDB
                         td.html("<u style='cursor:pointer'>Visit 1 Sleep Diary</u>");
                         td.find('u').on('click',function(){
@@ -83,7 +83,7 @@
     						window.open(q_url);
                         });
                         break;
-                        case '_Visit_2_SD_Questionnaires':
+                        case '_Visit_2_SD':
                         //MongoDB
                         td.html("<u style='cursor:pointer'>Visit 2 Sleep Diary</u>");
                         td.find('u').on('click',function(){
