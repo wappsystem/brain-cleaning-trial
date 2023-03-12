@@ -38,7 +38,7 @@
             $vm.module_list={
                 header:         {url:$vm.hosting_path+"/modules/sites/oq/header.html"},
                 footer:         {url:$vm.hosting_path+"/modules/sites/oq/footer.html"},
-                home:           {url:$vm.hosting_path+"/modules/sites/oq/home-sd-v2.html",Table:"participant-osa-clean",router:1},
+                home:           {url:$vm.hosting_path+"/modules/sites/oq/home-sd-v2.html",Table:"participant-osa-clean",router:1,task_name:"Sleep Diary V2"},
                 init_and_auth:  {url:$vm.hosting_path+"/modules/system/init-and-auth.html"},
                 vmext:          {url:$vm.hosting_path+"/modules/system/vm-extension.html"},
             }
@@ -75,8 +75,9 @@
             $vm._id=0;$vm.reload='';$vm.debug_message=true;
             //---------------------------------------------
             $vm.show=function(m_name){
-                var a=window.location.href.split('?/')[0].split('/'); a.pop(); var t=a.pop().replace(/-/g,' ');
-                var title=$vm.module_list[m_name].url.split('/').pop(); document.title=title+" - "+t ;
+                var a=window.location.href.split('?/')[0].split('/'); a.pop(); var t=a.pop().replace(/-/g,' ').toUpperCase();;
+                //var title=$vm.module_list[m_name].url.split('/').pop(); document.title=title+" - "+t ;
+                var title=$vm.module_list[m_name].task_name; if(title!=undefined) document.title=t+" - "+title ; else document.title=t;
                 var info=$vm.module_list[m_name].description;  if(info==undefined) info="Modular distributed microservices web application."; $("meta[name='description']").attr("content", info);
                 if(m_name!="sys_editor") $vm.active_name=m_name;
                 document.getElementById('layout').scrollTop=$vm.module_list[$vm.active_name].scrollTop;
