@@ -190,10 +190,10 @@
     m[p+"fingerbp-report-v2-data"] ={url:H+"/form-grid/backend/upload-file-data.html",Table:"fingerbp-report-v2-osa-clean",form_module:"fingerbp-report-v2-form",task_name:"Visit #2 - Finger BP – Upload"},
     m[p+"fingerbp-report-v2-form"] ={url:H+"/form-grid/backend/upload-file-form.html",Table:"fingerbp-report-v2-osa-clean",task_name:"Visit #2 - Finger BP – Upload"}
 
-    //if(window.location.toString().indexOf('tb=demo')!=-1){
+    if(window.location.toString().indexOf('tb=demo')!=-1){
         for(p in $vm.module_list){
             $vm.module_list[p].Table="demo-"+$vm.module_list[p].Table;
         }
-    //}
+    }
 
 })();
