@@ -49,8 +49,8 @@
     m[p+"site-data"] 	            ={url:H+"/form-grid/backend/site-data.html",Table:"site-osa-clean",form_module:"site-form",task_name:"Site List",router:1},
     m[p+"site-form"] 	            ={url:H+"/form-grid/backend/site-form.html",Table:"site-osa-clean",task_name:"Site List"},
 
-    m[p+"randomisation-table-data"]	={url:H+"/form-grid/backend/randomisation-table-data.html",Table:"randomisation-table-osa-clean",form_module:"randomisation-table-form-osa-clean"},
-    m[p+"randomisation-table-form"]	={url:H+"/form-grid/backend/randomisation-table-form.html",Table:"randomisation-table-osa-clean"},
+    m[p+"randomisation-table-data"]	={url:H+"/form-grid/backend/randomisation-table.html",Table:"randomisation-table-osa-clean",form_module:"randomisation-table-form-osa-clean"},
+    m[p+"randomisation-table-form"]	={url:H+"/form-grid/backend/randomisation-table.html",Table:"randomisation-table-osa-clean"},
 
     m[p+"pre-withdrawal-data"]	={url:H+"/form-grid/backend/withdrawal-data.html",Table:"pre-withdrawal-osa-clean",form_module:"pre-withdrawal-form",task_name:"Pre Study Withdrawal"},
     m[p+"pre-withdrawal-form"]	={url:H+"/form-grid/backend/withdrawal-form.html",Table:"pre-withdrawal-osa-clean",task_name:"Pre Study Withdrawal"},
