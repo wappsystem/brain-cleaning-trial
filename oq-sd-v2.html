@@ -31,14 +31,14 @@
         <!----------------------------------------------->
         <script app code>
             //---------------------------------------------
-            $VmAPI={};$vm.ver=[0.02,0.03]; $vm['jquery-ui-min-js']=1;
+            $VmAPI={};$vm.ver=[0.03,0.03]; $vm['jquery-ui-min-js']=1;
             $vm.flexindex=new FlexSearch({  doc: {id: "id",field: ["title","contents"]}    });
             $vm.hosting_path=window.location.href.substring(0, window.location.href.split('?')[0].lastIndexOf('/'));
             //---------------------------------------------
             $vm.module_list={
                 header:         {url:$vm.hosting_path+"/modules/sites/oq/header.html"},
                 footer:         {url:$vm.hosting_path+"/modules/sites/oq/footer.html"},
-                home:           {url:$vm.hosting_path+"/modules/sites/oq/home-sd-v2.html",Table:"participant-osa-clean",router:1,task_name:"Sleep Diary V2"},
+                home:           {url:$vm.hosting_path+"/modules/sites/oq/home-sd-v2.html",Table:"participant-brain-cleaning",router:1,task_name:"Sleep Diary V2"},
                 init_and_auth:  {url:$vm.hosting_path+"/modules/system/init-and-auth.html"},
                 vmext:          {url:$vm.hosting_path+"/modules/system/vm-extension.html"},
             }
