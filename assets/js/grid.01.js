@@ -5,7 +5,7 @@ m.query={};
 m.options={}
 m.sort={_id:-1}
 m.projection={}
-console.log(JSON.stringify(m))
+//console.log(JSON.stringify(m))
 $('#nav_title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
 //if(m.title!=undefined) $('#nav_title__ID').text(m.title);
 //-------------------------------------
@@ -277,7 +277,7 @@ m.export_records=function(){
     var req={api:m.api,cmd:"export",table:m.Table,query:m.query,I1:m.I1,search:$('#keyword__ID').val()}
     open_model__ID();
     $vm.request(req,function(N,i,txt){
-        console.log(i+"/"+N);
+        //console.log(i+"/"+N);
         $('#msg__ID').text((100*i/N).toFixed(0)+"%");
         if(i==-1){
             var len=txt.length;

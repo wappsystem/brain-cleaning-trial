@@ -9,7 +9,7 @@ m.load=function(){
     $('#F__ID')[0].reset();
     $('#submit__ID').show();
     $('#delete__ID').hide(); if(m.input!=undefined && m.input.record!=undefined && m.input.record._id!==undefined) $('#delete__ID').show();
-    console.log(JSON.stringify(m.input))
+    //console.log(JSON.stringify(m.input))
     if(m.input!=undefined) $vm.deserialize(m.input.record,'#F__ID');
 }
 //-------------------------------
@@ -233,7 +233,7 @@ $('#delete__ID').on('click', function(){
 $('#copy__ID').on('click',function(){
     if($vm.copy_paste==undefined) $vm.copy_paste={}
     $vm.copy_paste['__ID']={Data:$vm.serialize('#F__ID')};
-    console.log($vm.copy_paste['__ID'])
+    //console.log($vm.copy_paste['__ID'])
 })
 //---------------------------------------------
 $('#paste__ID').on('click',function(){
@@ -251,7 +251,7 @@ $('#header__ID').on('click', function(event){
             var nm=x.elements[i].getAttribute("name");
             if(nm!=null && nm!=nm0){ if(txt!="") txt+=", "; txt+=nm; nm0=nm;}
         }
-        console.log(txt);
+        //console.log(txt);
     }
 });
 //--------------------------------------------------------

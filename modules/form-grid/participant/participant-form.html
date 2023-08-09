@@ -37,16 +37,20 @@
 							<span class="question">
 								Gender
 							</span>
-							<div class="grid-container-3">
+							<div class="grid-container-2">
 								<div>
 									<input id="gender_1__ID" name="Gender" type="radio" value="Male" required>
-									<label class="rd_btn width_88" for="gender_1__ID">Male</label>
+									<label class="rd_btn width_65" for="gender_1__ID">Male</label>
+									<br>
+									<input id="gender_2__ID" name="Gender" type="radio" value="Female">
+									<label class="rd_btn width_65" for="gender_2__ID">Female</label>
+									<br>
+									<input id="gender_3__ID" name="Gender" type="radio" value="Other">
+									<label class="rd_btn width_65" for="gender_3__ID">Other</label>
 								</div>
-								<div><input id="gender_2__ID" name="Gender" type="radio" value="Female">
-									<label class="rd_btn width_88" for="gender_2__ID">Female</label>
-								</div>
-								<div><input id="gender_3__ID" name="Gender" type="radio" value="Other">
-									<label class="rd_btn width_88" for="gender_3__ID">Other</label>
+								<div><label><span class="question">DOB</span>
+										<input type=date name="DOB" class=formcontrol />
+									</label>
 								</div>
 							</div>
 						</fieldset>
@@ -55,24 +59,26 @@
 				<div class="formgroup">
 					<fieldset class="">
 						<div class="grid-container-2">
-							<div><label style="width:100%"><span class="question">DOB</span>
-									<input type=date name="DOB" class=formcontrol />
+							<div><label><span class="question">Password</span>
+									<input type=text name="_Password" class=formcontrol style="width:90%" />
 								</label>
 							</div>
-							<div><label style="width:100%"><span class="question">Password</span>
-									<input type=text name="_Password" class=formcontrol />
+							<div><label><span class="question">Treatment</span>
+									<input type=text name="Treatment" class=formcontrol  style="width:90%" readonly />
 								</label>
 							</div>
 						</div>
-						<div class="grid-container-2">
-							<div><label style="width:100%"><span class="question">Randomisation Number</span>
-									<input type=text name="Randomisation_Number" class=formcontrol readonly
-										placeholder='click here to randomise' />
-								</label>
-							</div>
-							<div><label style="width:100%"><span class="question">Randomised by</span>
-									<input type=text name="Randomised_by" class=formcontrol readonly />
-								</label>
+						<div id="randomisation_div__ID">
+							<div class="grid-container-2">
+								<div><label><span class="question">Randomisation Number</span>
+										<input type=text name="Randomisation_Number" class=formcontrol readonly
+											placeholder='click here to randomise' style="width:90%" />
+									</label>
+								</div>
+								<div><label><span class="question">Randomised by</span>
+										<input type=text name="Randomised_by" class=formcontrol readonly style="width:90%" />
+									</label>
+								</div>
 							</div>
 						</div>
 					</fieldset>
@@ -88,15 +94,18 @@
 			//-------------------------------------
 			VmInclude: '__HOST__/assets/js/form.01.js'
 			//-------------------------------------
+			var rand_num="";
 			var load = m.load;
 			m.load = function () {
 				load();
 				if (m.input.record == undefined) {
 					$('.row_participant__ID').hide()
+					$('#randomisation_div__ID').hide();
 					$('#F__ID input[name=_Password').val($vm.vm_password(8, false));
 				}
 				else {
 					$('.row_participant__ID').show()
+					$('#randomisation_div__ID').show();
 					$('#record__ID').val(m.input.record.UID)
 				}
 			}
@@ -115,17 +124,31 @@
 						}
 						max_I1++;
 						$('#F__ID input[name=Randomisation_Number').val('R'+max_I1.toString().padStart(3,"0"));
+						rand_num=max_I1.toString();
 						$('#F__ID input[name=Randomised_by').val($vm.user_name);
 					})
 				}
 			})
 			//-------------------------------------
 			m.before_submit = function (data, index) {
-				var I1 = $('#F__ID input[name=Randomisation_Number').val().slice(-3); if (I1 != '' && I1 != '-') index.I1 = parseInt(I1);
-				var nd=new Date()
-				index.I2=nd.getFullYear()+"-"+$vm.pad(nd.getMonth()+1,2)+"-"+$vm.pad(nd.getDate(),2);
+				var I1 = rand_num; 
+				if (I1 != '' && I1 != '-') {
+					index.I1 = parseInt(I1);
+					var nd=new Date()
+					index.I2=nd.getFullYear()+"-"+$vm.pad(nd.getMonth()+1,2)+"-"+$vm.pad(nd.getDate(),2);
+					jQuery.ajaxSetup({ async: false });
+						var tb = $vm.module_list["randomisation-table-data"].Table;
+						var query={UID:index.I1}
+						$vm.request({ cmd: "find", table: tb,query:query, limit:1 }, function (res) {
+							if (res.result.length != 0) {
+								data.Treatment=res.result[0].Data.Treatment;
+								index.I3=res.result[0].Data.Treatment;
+							}
+						});
+					jQuery.ajaxSetup({ async: true });
+				}
 			}
-			//-------------------------------------
+			//--------------------------------
 		}
 	</script>
 	<style>
