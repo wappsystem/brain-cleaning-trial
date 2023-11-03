@@ -9,7 +9,7 @@
             //-------------------------------------
             $('#title__ID').text('Participants');            
             //-------------------------------------
-            var fields="_Participant_ID,Subject_ID,Screening_Number,Randomisation_Number,Treatment,Subject_Initials,Gender,DOB,_Data_Entry,_Screening_Questionnaires,_Visit_1_SD,_Visit_1_Questionnaires,_Visit_2_SD,_Visit_2_Questionnaires,_Login_ID,_Password";
+            var fields="_Participant_ID,Subject_ID,Screening_Number,_Pre_screening,_Screening,Randomisation_Number,Treatment,Subject_Initials,Gender,DOB,_Data_Entry,_Screening_Questionnaires,_Visit_1_SD,_Visit_1_Questionnaires,_Visit_2_SD,_Visit_2_Questionnaires,_Login_ID,_Password";
             m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
             //-------------------------------------
             m.cell_render=function(records,I,field,td,set_value,source){
@@ -98,6 +98,38 @@
                     case '_Login_ID':
                         td.html(records[I].UID+"-"+records[I].Data.Subject_Initials);
                         break;
+                    case '_Pre_screening':
+                    var v=records[I].Data.prescreening;
+                    console.log("prescreening: "+v)
+                        if(v=='1'){
+                            td.html("<i class='fas fa-smile'></i>");
+                            td.css('color','green')
+                        }
+                        else if(v=='0'){
+                            td.html("<i class='fas fa-frown'></i>");
+                            td.css('color','red')
+                        }
+                        else {
+                            td.html("N/A")
+                            td.css('color','black')
+                        }   
+
+                        break;
+                    case '_Screening':
+                    console.log("screening: "+v)
+                    var v=records[I].Data.screening;
+                        if(v=='1'){
+                            td.html("<i class='fas fa-smile'></i>");
+                            td.css('color','green')
+                        }
+                        else if(v=='0'){
+                            td.html("<i class='fas fa-frown'></i>");
+                            td.css('color','red')
+                        }
+                        else {
+                            td.html("N/A")
+                        }   
+                    break;
                 }
             }
             //-------------------------------------

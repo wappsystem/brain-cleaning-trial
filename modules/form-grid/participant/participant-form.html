@@ -56,6 +56,20 @@
 						</fieldset>
 					</div>
 				</div>
+				<div class="hide">
+					<fieldset class="">
+						<div class="grid-container-2">
+							<div><label><span class="question">Pre-screening eligibility</span>
+									<input type=text name="prescreening" class=formcontrol style="width:90%" />
+								</label>
+							</div>
+							<div><label><span class="question">Screening eligibility</span>
+									<input type=text name="screening" class=formcontrol  style="width:90%" />
+								</label>
+							</div>
+						</div>
+					</fieldset>
+				</div>
 				<div class="formgroup">
 					<fieldset class="">
 						<div class="grid-container-2">
@@ -111,28 +125,34 @@
 			}
 			//-------------------------------------
 			$('#F__ID input[name=Randomisation_Number]').on('click', function () {
-				var I1 = $('#F__ID input[name=Randomisation_Number').val();
-				if (I1 == '') {
-					$vm.request({ cmd: "find", table: m.Table, sort: { I1: -1 }, skip: 0, limit: 1 }, function (res) {
-						if (res.sys.permission == false) {
-							$vm.alert("No permission. Private database table, ask the table's owner for permissions.");
-							return;
-						}
-						var max_I1 = 0;
-						if (res.result.length > 0) {
-							if (res.result[0].I1 !== undefined) max_I1 = res.result[0].I1
-						}
-						max_I1++;
-						$('#F__ID input[name=Randomisation_Number').val('R'+max_I1.toString().padStart(3,"0"));
-						rand_num=max_I1.toString();
-						$('#F__ID input[name=Randomised_by').val($vm.user_name);
-					})
+				if($('#F__ID input[name=prescreening]').val()=='1' && $('#F__ID input[name=screening]').val()=='1'){
+					var I1 = $('#F__ID input[name=Randomisation_Number').val();
+					if (I1 == '') {
+						$vm.request({ cmd: "find", table: m.Table, sort: { I1: -1 }, skip: 0, limit: 1 }, function (res) {
+							if (res.sys.permission == false) {
+								$vm.alert("No permission. Private database table, ask the table's owner for permissions.");
+								return;
+							}
+							var max_I1 = 0;
+							if (res.result.length > 0) {
+								if (res.result[0].I1 !== undefined) max_I1 = res.result[0].I1
+							}
+							max_I1++;
+							$('#F__ID input[name=Randomisation_Number').val('R'+max_I1.toString().padStart(3,"0"));
+							rand_num=max_I1.toString();
+							$('#F__ID input[name=Randomised_by').val($vm.user_name);
+						})
+					}
+				}
+				else {
+					$vm.alert("Can't be randomised. Doesn't fullfill eligibility criteria");
 				}
 			})
 			//-------------------------------------
 			m.before_submit = function (data, index) {
+				console.log("A: "+rand_num)
 				var I1 = rand_num; 
-				if (I1 != '' && I1 != '-') {
+				if (I1 != '' && I1!=undefined) {
 					index.I1 = parseInt(I1);
 					var nd=new Date()
 					index.I2=nd.getFullYear()+"-"+$vm.pad(nd.getMonth()+1,2)+"-"+$vm.pad(nd.getDate(),2);
@@ -141,6 +161,7 @@
 						var query={UID:index.I1}
 						$vm.request({ cmd: "find", table: tb,query:query, limit:1 }, function (res) {
 							if (res.result.length != 0) {
+								//console.log(JSON.stringify(res.result));
 								data.Treatment=res.result[0].Data.Treatment;
 								index.I3=res.result[0].Data.Treatment;
 							}
@@ -152,9 +173,6 @@
 		}
 	</script>
 	<style>
-		#D__ID {
-		}
-
 		/*VmInclude:__HOST__/assets/css/wapp-form.css*/
 	</style>
 </div>

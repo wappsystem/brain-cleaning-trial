@@ -272,6 +272,46 @@
         return before_submit(data, index);
       }
       //-------------------------------------
+      m.after_insert = function(data,res){
+        update_participant(data);
+      }
+      //-------------------------------------
+      m.after_update = function(data,res){
+        update_participant(data);
+      }
+      //-------------------------------------
+      var update_participant=function(data){
+        //console.log("common: "+JSON.stringify(data))
+				var tb = $vm.module_list['participant-data'].Table;
+				var p_uid=parseInt(data.Participant_uid);
+				var qry = { UID: p_uid };
+				var pw="";
+        jQuery.ajaxSetup({ async: false });
+        $vm.request({ cmd: "find", table: tb, query: qry }, function (res) {
+            if (res.result.length != 0) {
+              var rid=res.result[0]._id;
+              res.result[0].Data.screening=data.eligible
+              var res_data=res.result[0].Data
+              $vm.request({cmd:"update",id:rid,table:tb,data:res_data},function(res){
+                if(res.status=="lk"){
+                    $vm.alert("This record is locked.");
+                    return;
+                }
+                //-----------------------------
+                if(res.status=="np"){
+                    alert("No permission to update this record.");
+                    return;
+                }
+              });
+            }
+            else $vm.alert("Sorry, something went wrong!")
+        });
+        jQuery.ajaxSetup({ async: true });
+        $vm.refresh=1;
+        m.change_status++;
+        window.history.go(-1);
+      }
+      //-------------------------------------
     }
   </script>
   <style>
